@@ -1,0 +1,285 @@
+.nav-link.active {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.custom-navlink {
+    font-size: 18px;
+}
+
+.nav-link.inactive {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    background-color: #EC7100;
+    z-index: 1;
+}
+
+.trending {
+    background-color: linear-gradient(to bottom, #FFFFFF 0%, #E5E8FF 100%);
+}
+
+.carousel-button {
+    background-color:  #041A40;
+}
+
+.carousel-button:hover {
+    background-color:  #041A40;
+    color: white;    
+}
+
+.subscribe-section {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #E5E8FF 100%); border-radius: 30px;
+}
+
+.subscribe-btn {
+    border: 2px solid #EC7100;
+    color: #EC7100;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #EC7100;
+    color: white;
+}
+
+
+/* footer styles */
+footer, nav {
+    background-color:  #111F3C;
+    color: white;
+}
+
+footer {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+nav {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.underline-animation {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -20px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+    width: 100%;
+}
+
+.footer-link {
+    font-size: 18px;;
+    color: white;
+}
+
+.footer-link:hover {
+    color: #EC7100;
+}
+
+.fire-emoji, .party-emoji {
+    display: inline-block;
+    width: 25px;
+    background-size: contain;
+    transition: background-image 0.3s ease;
+}
+
+.fire-btn:hover .fire-emoji {
+    background-image: url('./assets/animation/fire-animation.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.party-btn:hover .party-emoji {
+    background-image: url('./assets/animation/party-popper.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+/* social media button styles */
+.social-media-btn {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.linkedin {
+    background-color: #0077b5;
+  }
+
+.social-media-btn:hover {
+    width: 110px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+}
+  
+.social-media-btn:hover .social-media-text {
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+  
+.social-media-btn:hover .social-media-icon {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.social-media-text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.social-media-icon {
+    transition-duration: 0.3s;
+}
+
+/* Base styles for Store buttons */
+.playstore-btn, .appstore-btn {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+    height: 60px;
+    border-radius: 30px;
+    width: 180px;
+    border: 1px solid black;
+}
+
+.playstore-icon, .appstore-icon {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.playstore-btn:hover, .appstore-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.playstore-btn:hover .playstore-icon, .appstore-btn:hover .appstore-icon {
+    color: black;
+}
+
+.playstore-text, .appstore-text {
+    font-size: 12px;
+}
+
+/* Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #F7F7F7;
+    border-radius: 10px;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: 2px solid #F7F7F7;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #D9D9D9;
+}
+  
+/* For Firefox */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #D9D9D9 #F7F7F7;
+}
+  
+/* For Internet Explorer and Edge */
+.custom-scrollbar {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+  
+@media (max-width: 767.98px) {
+    .custom-navlink {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-image {
+        height: 60vh;
+        width: 100%;
+    }
+}
+
