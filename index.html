@@ -27,7 +27,7 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
-                    <li class="nav-item">
+                    <li class="nav-item col-6 col-sm-4 col-md-1 mb-2">
                         <a class="nav-link text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
@@ -45,23 +45,43 @@
     <!-- secondary navbar section -->
     <section class="bg-primary bg-opacity-10 py-3 rounded-pill">
         <div class="container">
-            <div class="d-flex justify-content-around flex-wrap">
-                <a href="#"
-                    class="nav-link px-2 text-nowrap active rounded-pill custom-navlink border-0 px-md-3 px-0 py-1">Heritage</a>
-                <a href="#"
-                    class="nav-link px-2 text-nowrap inactive rounded-pill custom-navlink border-0 px-md-3 px-0 py-1">Technology</a>
-                <a href="#"
-                    class="nav-link px-2 text-nowrap inactive rounded-pill custom-navlink border-0 px-md-3 px-0 py-1">Architecture</a>
-                <a href="#"
-                    class="nav-link px-2 text-nowrap inactive rounded-pill custom-navlink border-0 px-md-3 px-0 py-1">Real-Estate</a>
-                <a href="#"
-                    class="nav-link px-2 text-nowrap inactive rounded-pill custom-navlink border-0 px-md-3 px-0 py-1">Business</a>
-            </div>
+            <ul class="nav nav-tabs border-0 d-flex justify-content-around flex-wrap gap-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link active bg-transparent text-dark text-nowrap custom-navlink border-top-0 border-end-0 border-start-0 px-0"
+                        id="Heritage-tab" data-bs-toggle="tab" data-bs-target="#Heritage" type="button" role="tab"
+                        aria-controls="Heritage" aria-selected="true">Heritage</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link bg-transparent text-dark text-nowrap custom-navlink border-top-0 border-end-0 border-start-0 px-0"
+                        id="Technology-tab" data-bs-toggle="tab" data-bs-target="#Technology" type="button" role="tab"
+                        aria-controls="Technology" aria-selected="true">Technology</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link bg-transparent text-dark text-nowrap custom-navlink border-top-0 border-end-0 border-start-0 px-0"
+                        id="Architecture-tab" data-bs-toggle="tab" data-bs-target="#Architecture" type="button"
+                        role="tab" aria-controls="Architecture" aria-selected="true">Architecture</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link bg-transparent text-dark text-nowrap custom-navlink border-top-0 border-end-0 border-start-0 px-0"
+                        id="Real-Estate-tab" data-bs-toggle="tab" data-bs-target="#Real-Estate" type="button" role="tab"
+                        aria-controls="Real-Estate" aria-selected="false">Real-Estate</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link bg-transparent text-dark text-nowrap custom-navlink border-top-0 border-end-0 border-start-0 px-0"
+                        id="Business-tab" data-bs-toggle="tab" data-bs-target="#Business" type="button" role="tab"
+                        aria-controls="Business" aria-selected="false">Business</button>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- hero section -->
-    <section class="px-md-5 px-3 px-lg-5 py-5">
+    <section class="container py-5">
         <div class="fs-1 fw-bold text-center">Hot News</div>
         <div class="row mt-5">
             <!-- left side section -->
@@ -77,122 +97,103 @@
                 </div>
             </div>
             <!-- right side section -->
-            <div class="col-md-6 mt-5 mt-md-0 mt-lg-0 custom-scrollbar" style="overflow-y: auto; height: 620px;">
+            <div class="col-md-6 mt-5 mt-md-0 mt-lg-0 custom-scrollbar" style="overflow-y: auto; height: 460px;">
                 <!-- first card -->
                 <div class="row align-items-center position-relative">
                     <!-- Image Column -->
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-75 w-100">
+                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
                     </div>
                     <!-- Content Column -->
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h5>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p style="font-size: 14px;">Descubre cómo el propósito y la
-                                incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones.
-                                Juan
-                                Bautista Bidondo, Co-Fundador y CEO en TOTS AGENCY, comparte sus reflexiones
-                                sobre
-                                cómo las empresas pueden aportar valor en lugar de simplemente vender para
-                                sobrevivir. ¡Lee más en este artículo de opinión en Cana...</p>
+                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
+                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
+                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
+                                en este artículo de opinión en Cana...</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- second card -->
-                <div class="mt-3">
-                    <div class="row align-items-center position-relative">
-                        <!-- Image Column -->
-                        <div class="col-md-4">
-                            <span class="badge position-absolute top-0 start-0 m-3 px-3 text-light">Heritage</span>
-                            <img src="./assets/property/property-7.png" alt="Card-image" class="h-75 w-100">
-                        </div>
-                        <!-- Content Column -->
-                        <div class="col-md-8">
-                            <div class="mt-md-0 mt-3 mt-lg-0">
-                                <h5>Emprendedurismo. Propósito e incertidumbre, dos
-                                    fuerzas a favor de las organizaciones</h5>
-                                <p style="font-size: 14px;">Descubre cómo el propósito y la
-                                    incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones.
-                                    Juan
-                                    Bautista Bidondo, Co-Fundador y CEO en TOTS AGENCY, comparte sus reflexiones
-                                    sobre
-                                    cómo las empresas pueden aportar valor en lugar de simplemente vender para
-                                    sobrevivir. ¡Lee más en este artículo de opinión en Cana...</p>
-                            </div>
+                <div class="row align-items-center position-relative">
+                    <!-- Image Column -->
+                    <div class="col-md-5">
+                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
+                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
+                    </div>
+                    <!-- Content Column -->
+                    <div class="col-md-7">
+                        <div class="mt-md-0 mt-3 mt-lg-0">
+                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
+                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
+                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
+                                en este artículo de opinión en Cana...</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- third card -->
-                <div class="mt-3">
-                    <div class="row align-items-center position-relative">
-                        <!-- Image Column -->
-                        <div class="col-md-4">
-                            <span class="badge position-absolute top-0 start-0 m-3 px-3 text-light">Heritage</span>
-                            <img src="./assets/property/property-7.png" alt="Card-image" class="h-75 w-100">
-                        </div>
-                        <!-- Content Column -->
-                        <div class="col-md-8">
-                            <div class="mt-md-0 mt-3 mt-lg-0">
-                                <h5>Emprendedurismo. Propósito e incertidumbre, dos
-                                    fuerzas a favor de las organizaciones</h5>
-                                <p style="font-size: 14px;">Descubre cómo el propósito y la
-                                    incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones.
-                                    Juan
-                                    Bautista Bidondo, Co-Fundador y CEO en TOTS AGENCY, comparte sus reflexiones
-                                    sobre
-                                    cómo las empresas pueden aportar valor en lugar de simplemente vender para
-                                    sobrevivir. ¡Lee más en este artículo de opinión en Cana...</p>
-                            </div>
+                <div class="row align-items-center position-relative mt-3">
+                    <!-- Image Column -->
+                    <div class="col-md-5">
+                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
+                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
+                    </div>
+                    <!-- Content Column -->
+                    <div class="col-md-7">
+                        <div class="mt-md-0 mt-3 mt-lg-0">
+                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
+                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
+                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
+                                en este artículo de opinión en Cana...</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- fourth card -->
-                <div class="row align-items-center mt-3 position-relative">
+                <div class="row align-items-center position-relative mt-3">
                     <!-- Image Column -->
-                    <div class="col-md-4">
-                        <span class="badge position-absolute top-0 start-0 m-3 px-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-75 w-100">
+                    <div class="col-md-5">
+                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
+                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
                     </div>
                     <!-- Content Column -->
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h5>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p style="font-size: 14px;">Descubre cómo el propósito y la
-                                incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones.
-                                Juan
-                                Bautista Bidondo, Co-Fundador y CEO en TOTS AGENCY, comparte sus reflexiones
-                                sobre
-                                cómo las empresas pueden aportar valor en lugar de simplemente vender para
-                                sobrevivir. ¡Lee más en este artículo de opinión en Cana...</p>
+                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
+                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
+                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
+                                en este artículo de opinión en Cana...</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- fifth card -->
-                <div class="row align-items-center mt-3 position-relative">
+                <div class="row align-items-center position-relative mt-3">
                     <!-- Image Column -->
-                    <div class="col-md-4">
-                        <span class="badge position-absolute top-0 start-0 m-3 px-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-75 w-100">
+                    <div class="col-md-5">
+                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
+                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
                     </div>
                     <!-- Content Column -->
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h5>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p style="font-size: 14px;">Descubre cómo el propósito y la
-                                incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones.
-                                Juan
-                                Bautista Bidondo, Co-Fundador y CEO en TOTS AGENCY, comparte sus reflexiones
-                                sobre
-                                cómo las empresas pueden aportar valor en lugar de simplemente vender para
-                                sobrevivir. ¡Lee más en este artículo de opinión en Cana...</p>
+                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
+                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
+                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
+                                en este artículo de opinión en Cana...</p>
                         </div>
                     </div>
                 </div>
@@ -201,55 +202,82 @@
     </section>
 
     <!-- Trending section one -->
-    <section class="px-md-5 px-3 px-lg-5 py-5">
+    <section class="container py-5">
         <div class="text-center fs-1 fw-bold">What’s Trending</div>
         <div class="row mt-5">
             <!-- Button Container -->
-            <div class="col-12 d-flex flex-wrap gap-md-2 gap-0">
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Mumbai</button>
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Delhi</button>
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Baroda</button>
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Pune</button>
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Chennai</button>
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Bengaluru</button>
-                <!-- Sort Button for Desktop View -->
+            <div class="d-flex flex-wrap align-items-center mb-2">
+                <ul class="nav nav-pills border-0 d-flex flex-wrap me-auto" id="pills-tab" role="tablist">
+                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark active border bg-light w-100 text-nowrap"
+                            id="pills-Mumbai-tab" data-bs-toggle="pill" data-bs-target="#pills-Mumbai" type="button"
+                            role="tab" aria-controls="pills-Mumbai" aria-selected="true"
+                            onclick="changeCity('Mumbai')">Mumbai</button>
+                    </li>
+                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Delhi-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button" role="tab"
+                            aria-controls="pills-Delhi" aria-selected="false"
+                            onclick="changeCity('Delhi')">Delhi</button>
+                    </li>
+                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Baroda-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button" role="tab"
+                            aria-controls="pills-Baroda" aria-selected="false"
+                            onclick="changeCity('Baroda')">Baroda</button>
+                    </li>
+                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Pune-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button" role="tab"
+                            aria-controls="pills-Pune" aria-selected="false" onclick="changeCity('Pune')">Pune</button>
+                    </li>
+                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Chennai-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Chennai" type="button" role="tab"
+                            aria-controls="pills-Chennai" aria-selected="false"
+                            onclick="changeCity('Chennai')">Chennai</button>
+                    </li>
+                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light text-nowrap" id="pills-Bengaluru-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Bengaluru" type="button" role="tab"
+                            aria-controls="pills-Bengaluru" aria-selected="false"
+                            onclick="changeCity('Bengaluru')">Bengaluru</button>
+                    </li>
+                </ul>
                 <div class="col-md-1 ms-auto col-12">
-                    <button class="btn w-100 btn-light shadow-sm">Sort</button>
+                    <button class="text-dark border bg-light py-2 rounded shadow-sm w-100">Sort</button>
                 </div>
             </div>
         </div>
 
         <div class="row align-items-center">
             <!-- let side section -->
-            <div class="col-md-8">
+            <div class="col-md-8" id="property-cards">
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <div class="card mb-5">
-                            <img class="card-img-top position-relative" src="./assets/property/property-1.jpg"
-                                alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <img class="card-img-top position-relative" id="card-img-1"
+                                src="./assets/property/mumbai-1.jpg" alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="card-badge-1">Heritage</span>
                             <div class="card-body">
-                                <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <h5 class="card-title" id="card-title-1">Villa in Mumbai with Sea View</h5>
                                     <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
                                         data-bs-placement="top" title="Share">
                                         <i class="fa-solid fa-share-nodes"></i>
                                     </button>
                                 </div>
-                                <p class="card-text mt-3">
-                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON temple 200m.
-                                    More about this property...
+                                <p class="card-text mt-3" id="card-text-1">Very nice property in sec24 Rohini near
+                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                    property...
                                 </p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="mb-0">March 6, 2024</h6>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">
-                                            Read More
-                                        </button>
+                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
                                     </div>
                                 </div>
                             </div>
@@ -258,32 +286,27 @@
 
                     <div class="col-md-6">
                         <div class="card mb-5">
-                            <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
-                                alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <img class="card-img-top position-relative" id="card-img-2"
+                                src="./assets/property/mumbai-2.jpg" alt="property-2">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="card-badge-2">Heritage</span>
                             <div class="card-body">
-                                <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <h5 class="card-title" id="card-title-2">Apartment in Mumbai Suburbs</h5>
                                     <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
                                         data-bs-placement="top" title="Share">
                                         <i class="fa-solid fa-share-nodes"></i>
                                     </button>
                                 </div>
-
-                                <p class="card-text mt-3">
-                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON temple 200m.
-                                    More about this property...
-                                </p>
+                                <p class="card-text mt-3" id="card-text-2">Very nice property in sec24 Rohini near
+                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                    property...</p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="mb-0">March 6, 2024</h6>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">
-                                            Read More
-                                        </button>
+                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
                                     </div>
                                 </div>
                             </div>
@@ -291,9 +314,10 @@
                     </div>
                 </div>
             </div>
+
             <!-- right side section -->
             <div class="col-md-4 bg-primary p-3 bg-opacity-10 custom-scrollbar"
-                style="overflow-y: auto; height: 560px;">
+                style="overflow-y: auto; height: 470px;">
                 <!-- first card -->
                 <div class="row">
                     <!-- Image Column -->
@@ -303,9 +327,9 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -321,15 +345,14 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
                     <hr>
                 </div>
-
 
                 <!-- third card -->
                 <div class="row">
@@ -340,9 +363,9 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -357,9 +380,26 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <!-- Image Column -->
+                    <div class="col-md-4">
+                        <img src="./assets/property/property-12.png" alt="Card-image" class="h-75 w-100">
+                    </div>
+                    <!-- Content Column -->
+                    <div class="col-md-8">
+                        <div>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -370,39 +410,34 @@
     </section>
 
     <!-- Trending section two -->
-    <section class="px-md-5 px-3 px-lg-5">
+    <section class="container">
         <div class="row align-items-center">
-            <!-- let side section -->
-            <div class="col-md-8">
+            <!-- left side section -->
+            <div class="col-md-8" id="property-cards">
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <div class="card mb-5">
-                            <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
-                                alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <img class="card-img-top position-relative" id="card-img-3"
+                                src="./assets/property/mumbai-3.jpg" alt="property-3">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="card-badge-3">Heritage</span>
                             <div class="card-body">
-                                <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <h5 class="card-title" id="card-title-3">Luxury Apartment in Mumbai</h5>
                                     <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
                                         data-bs-placement="top" title="Share">
                                         <i class="fa-solid fa-share-nodes"></i>
                                     </button>
                                 </div>
-
-                                <p class="card-text mt-3">
-                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON temple 200m.
-                                    More about this property...
-                                </p>
+                                <p class="card-text mt-3" id="card-text-3">Very nice property in sec24 Rohini near
+                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                    property...</p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="mb-0">March 6, 2024</h6>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">
-                                            Read More
-                                        </button>
+                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
                                     </div>
                                 </div>
                             </div>
@@ -411,32 +446,27 @@
 
                     <div class="col-md-6">
                         <div class="card mb-5">
-                            <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
-                                alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <img class="card-img-top position-relative" id="card-img-4"
+                                src="./assets/property/mumbai-2.jpg" alt="property-4">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="card-badge-4">Heritage</span>
                             <div class="card-body">
-                                <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <h5 class="card-title" id="card-title-4">Apartment in Mumbai Suburbs</h5>
                                     <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
                                         data-bs-placement="top" title="Share">
                                         <i class="fa-solid fa-share-nodes"></i>
                                     </button>
                                 </div>
-
-                                <p class="card-text mt-3">
-                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON temple 200m.
-                                    More about this property...
-                                </p>
+                                <p class="card-text mt-3" id="card-text-4">Very nice property in sec24 Rohini near
+                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                    property...</p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="mb-0">March 6, 2024</h6>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">
-                                            Read More
-                                        </button>
+                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
                                     </div>
                                 </div>
                             </div>
@@ -444,9 +474,10 @@
                     </div>
                 </div>
             </div>
+
             <!-- right side section -->
             <div class="col-md-4 bg-primary p-3 bg-opacity-10 custom-scrollbar"
-                style="overflow-y: auto; height: 560px;">
+                style="overflow-y: auto; height: 470px;">
                 <!-- first card -->
                 <div class="row">
                     <!-- Image Column -->
@@ -456,9 +487,9 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -474,9 +505,9 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -492,9 +523,9 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -509,9 +540,26 @@
                     <!-- Content Column -->
                     <div class="col-md-8">
                         <div>
-                            <h5 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h5>
-                            <p class="mb-0 fs-5 mt-3">March 6, 2024</p>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <!-- Image Column -->
+                    <div class="col-md-4">
+                        <img src="./assets/property/property-9.png" alt="Card-image" class="h-75 w-100">
+                    </div>
+                    <!-- Content Column -->
+                    <div class="col-md-8">
+                        <div>
+                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                fuerzas a favor de las organizaciones</h6>
+                            <p class="mb-0 mt-2">March 6, 2024</p>
                         </div>
                     </div>
 
@@ -551,7 +599,7 @@
     </section>
 
     <!-- Featured blog section -->
-    <section class="px-md-5 px-3 px-lg-5 py-5">
+    <section class="container py-5">
         <div class="text-center fs-1 fw-bold mb-5">Featured Blogs</div>
         <div id="carouselExampleIndicators" class="carousel slide position-relative d-none d-md-block">
             <div class="carousel-inner">
@@ -760,21 +808,35 @@
     </section>
 
     <!-- bottom card section -->
-    <section class="px-md-5 px-3 px-lg-5 py-5">
+    <section class="container py-5">
         <div class="row mt-5">
             <!-- Button Container -->
-            <div class="col-12 d-flex flex-wrap gap-md-2 gap-0">
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Expertise</button>
-                <button class="btn btn-light shadow-sm col-6 col-sm-4 col-md-1 mb-2">Category</button>
-                <button class="btn btn-light shadow-sm col-12 col-sm-12 col-md-1 mb-2">Type</button>
-                <!-- Sort Button for Desktop View -->
-                <div class="col-md-1 ms-auto col-12">
-                    <button class="btn w-100 btn-light shadow-sm">Sort</button>
+            <div class="d-flex flex-wrap align-items-center mb-2">
+                <ul class="nav nav-pills border-0 d-flex flex-wrap mx-auto mx-md-0 mb-2" id="pills-tab" role="tablist">
+                    <li class="nav-item mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark active border bg-light w-100 text-nowrap"
+                            id="pills-Expertise-tab" data-bs-toggle="pill" data-bs-target="#pills-Expertise"
+                            type="button" role="tab" aria-controls="pills-Expertise"
+                            aria-selected="true">Expertise</button>
+                    </li>
+                    <li class="nav-item mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Category-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Category" type="button" role="tab"
+                            aria-controls="pills-Category" aria-selected="false">Category</button>
+                    </li>
+                    <li class="nav-item mb-2 pe-2" role="presentation">
+                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Type-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Type" type="button" role="tab"
+                            aria-controls="pills-Type" aria-selected="false">Type</button>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center col-md-1 ms-md-auto col-12 px-4">
+                    <button class="text-dark border bg-light py-2 rounded shadow-sm w-100">Sort</button>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-center mx-0 mt-5">
+        <div class="row mt-5">
             <!-- Property 5 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card mb-5">
@@ -875,7 +937,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mx-0">
+        <div class="row justify-content-center">
             <!-- Property 8 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card mb-5">
@@ -978,7 +1040,7 @@
 
 
         <div class="collapse card-container" id="cardContainer">
-            <div class="row justify-content-center mx-0">
+            <div class="row justify-content-center">
                 <!-- Property 5 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card mb-5">
