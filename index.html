@@ -49,29 +49,37 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active text-nowrap custom-navlink px-1" id="Heritage-tab"
                         data-bs-toggle="tab" data-bs-target="#Heritage" type="button" role="tab"
-                        aria-controls="Heritage" aria-selected="true"><span
-                            class="px-md-3 px-0">Heritage</span></button>
+                        aria-controls="Heritage" aria-selected="true" onclick="changeContent('Heritage')">
+                        <span class="px-md-3 px-0">Heritage</span>
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-nowrap custom-navlink px-1" id="Technology-tab" data-bs-toggle="tab"
                         data-bs-target="#Technology" type="button" role="tab" aria-controls="Technology"
-                        aria-selected="true">
-                        <span class="px-md-3 px-0">Technology</span></button>
+                        aria-selected="false" onclick="changeContent('Technology')">
+                        <span class="px-md-3 px-0">Technology</span>
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-nowrap custom-navlink px-1" id="Architecture-tab" data-bs-toggle="tab"
                         data-bs-target="#Architecture" type="button" role="tab" aria-controls="Architecture"
-                        aria-selected="true"><span class="px-md-3 px-0">Architecture</span></button>
+                        aria-selected="false" onclick="changeContent('Architecture')">
+                        <span class="px-md-3 px-0">Architecture</span>
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-nowrap custom-navlink px-1" id="Real-Estate-tab" data-bs-toggle="tab"
                         data-bs-target="#Real-Estate" type="button" role="tab" aria-controls="Real-Estate"
-                        aria-selected="false"><span class="px-md-3 px-0">Real-Estate</span></button>
+                        aria-selected="false" onclick="changeContent('Real-Estate')">
+                        <span class="px-md-3 px-0">Real-Estate</span>
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-nowrap custom-navlink px-1" id="Business-tab" data-bs-toggle="tab"
                         data-bs-target="#Business" type="button" role="tab" aria-controls="Business"
-                        aria-selected="false"><span class="px-md-3 px-0">Business</span></button>
+                        aria-selected="false" onclick="changeContent('Business')">
+                        <span class="px-md-3 px-0">Business</span>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -84,115 +92,21 @@
             <!-- left side section -->
             <div class="col-md-6">
                 <div class="position-relative">
-                    <span class="position-absolute bottom-0 start-0 m-4 text-light">
-                        <p class="fs-2 fw-bold">Vision Pro y Spatial Computer: La revolución de la realidad aumentada
-                        </p>
-                        <p class="fw-normal mt-3">Descubre cómo Vision Pro y Spatial Computer están transformando
+                    <span id="heroContent" class="position-absolute bottom-0 start-0 m-4 text-light">
+                        <p id="heroTitle" class="fs-2 fw-bold">Vision Pro y Spatial Computer: La revolución de la
+                            realidad aumentada</p>
+                        <p id="heroSubtitle" class="fw-normal mt-3">Descubre cómo Vision Pro y Spatial Computer están
+                            transformando
                             industrias con su potencial en la realidad aumentada. Conoce</p>
                     </span>
-                    <img src="./assets/hero-image.png" alt="hero-image" class="hero-image">
+                    <img id="heroImage" src="./assets/hero-image.png" alt="hero-image" class="hero-image">
                 </div>
             </div>
             <!-- right side section -->
+
             <div class="col-md-6 mt-5 mt-md-0 mt-lg-0 custom-scrollbar" style="overflow-y: auto; height: 460px;">
-                <!-- first card -->
-                <div class="row align-items-center position-relative">
-                    <!-- Image Column -->
-                    <div class="col-md-5">
-                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-7">
-                        <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
-                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
-                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
-                                en este artículo de opinión en Cana...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- second card -->
-                <div class="row align-items-center position-relative">
-                    <!-- Image Column -->
-                    <div class="col-md-5">
-                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-7">
-                        <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
-                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
-                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
-                                en este artículo de opinión en Cana...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- third card -->
-                <div class="row align-items-center position-relative mt-3">
-                    <!-- Image Column -->
-                    <div class="col-md-5">
-                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-7">
-                        <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
-                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
-                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
-                                en este artículo de opinión en Cana...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- fourth card -->
-                <div class="row align-items-center position-relative mt-3">
-                    <!-- Image Column -->
-                    <div class="col-md-5">
-                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-7">
-                        <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
-                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
-                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
-                                en este artículo de opinión en Cana...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- fifth card -->
-                <div class="row align-items-center position-relative mt-3">
-                    <!-- Image Column -->
-                    <div class="col-md-5">
-                        <span class="badge position-absolute top-0 start-0 m-3 text-light">Heritage</span>
-                        <img src="./assets/property/property-7.png" alt="Card-image" class="h-100 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-7">
-                        <div class="mt-md-0 mt-3 mt-lg-0">
-                            <h6>Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p style="font-size: 13px;">Descubre cómo el propósito y la incertidumbre pueden ser dos
-                                fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las
-                                empresas pueden aportar valor en lugar de simplemente vender para sobrevivir. ¡Lee más
-                                en este artículo de opinión en Cana...</p>
-                        </div>
-                    </div>
+                <div id="newsCards">
+                    <!-- News cards will be dynamically generated here -->
                 </div>
             </div>
         </div>
@@ -312,96 +226,11 @@
                 </div>
             </div>
 
-            <!-- right side section -->
+            <!-- Trending section one right side section -->
             <div class="col-md-4 bg-primary p-3 bg-opacity-10 custom-scrollbar"
                 style="overflow-y: auto; height: 470px;">
-                <!-- first card -->
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-8.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
 
-                    <hr>
-                </div>
-
-                <!-- second card -->
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-9.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <!-- third card -->
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-10.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-11.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-12.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
+                <div id="trendingNewsOneContainer"></div>
             </div>
         </div>
     </section>
@@ -472,96 +301,11 @@
                 </div>
             </div>
 
-            <!-- right side section -->
+            <!-- Trending section two right side section -->
             <div class="col-md-4 bg-primary p-3 bg-opacity-10 custom-scrollbar"
                 style="overflow-y: auto; height: 470px;">
-                <!-- first card -->
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-8.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <!-- second card -->
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-9.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <!-- third card -->
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-10.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-11.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
-
-                <div class="row">
-                    <!-- Image Column -->
-                    <div class="col-md-4">
-                        <img src="./assets/property/property-9.png" alt="Card-image" class="h-75 w-100">
-                    </div>
-                    <!-- Content Column -->
-                    <div class="col-md-8">
-                        <div>
-                            <h6 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                fuerzas a favor de las organizaciones</h6>
-                            <p class="mb-0 mt-2">March 6, 2024</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                </div>
+                <!-- trending  news -->
+                <div id="trendingNewsTwoContainer"></div>
             </div>
         </div>
     </section>

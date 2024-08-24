@@ -1,4 +1,6 @@
-document.querySelector(".toggle-collapse").addEventListener("click", function () {
+document
+  .querySelector(".toggle-collapse")
+  .addEventListener("click", function () {
     var cardContainer = document.getElementById("cardContainer");
     var arrowIcon = document.getElementById("arrowIcon").querySelector("i");
 
@@ -13,7 +15,7 @@ document.querySelector(".toggle-collapse").addEventListener("click", function ()
         arrowIcon.classList.remove("fa-arrow-up");
         arrowIcon.classList.add("fa-arrow-down");
     }
-});
+  });
 
 function changeCity(city) {
   const cityData = {
@@ -150,3 +152,496 @@ function changeCity(city) {
 window.onload = function () {
   changeCity("Mumbai");
 };
+
+const contentData = {
+  Heritage: {
+    heroImage: "./assets/hero-image.png",
+    heroTitle: "Heritage Hot News Dummy Second Line",
+    heroSubtitle:
+      "Discover the latest updates on heritage topics.  Explore fascinating histories and cultures.  Stay informed about preservation efforts.",
+    newsItems: [
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+    ],
+    trendingNewsOne: [
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title: "Innovative Housing Solutions for Urban Areas",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title: "Affordable Housing Projects Around the World",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-11.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+    ],
+    trendingNewsTwo: [
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      // Add more news items as needed
+    ],
+  },
+  Technology: {
+    heroImage: "./assets/hero-image.png",
+    heroTitle: "Technology Innovations Shaping Our Future",
+    heroSubtitle:
+      "Stay ahead with the latest in tech.  Innovations that are changing the world.  Explore the future of technology today.",
+    newsItems: [
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title: "Technology in Heritage Conservation",
+        date: "January 15, 2025",
+      },
+      {
+        imageUrl: "./assets/property/property-11.png",
+        title: "Preserving Heritage Through Innovation",
+        date: "February 20, 2025",
+      },
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title: "Blending Technology with Historical Sites",
+        date: "March 25, 2025",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title: "The Impact of Digital Tools on Heritage Preservation",
+        date: "April 30, 2025",
+      },
+    ],
+    trendingNewsOne: [
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-11.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+    ],
+    trendingNewsTwo: [
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      // Add more news items as needed
+    ],
+  },
+  Architecture: {
+    heroImage: "./assets/hero-image.png",
+    heroTitle: "Architecture Trends Redefining Spaces",
+    heroSubtitle:
+      "Explore cutting-edge designs.  Sustainable architecture for the future.  Innovative spaces that inspire.",
+    newsItems: [
+      {
+        title: "Architecture News 1",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title: "Architecture News 2",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+    ],
+    trendingNewsOne: [
+      {
+        imageUrl: "./assets/property/property-11.png",
+        title: "Modern Architecture in Urban Spaces",
+        date: "September 15, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title: "The Role of Architecture in Cultural Preservation",
+        date: "October 20, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title: "Architectural Marvels of the 21st Century",
+        date: "November 25, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title: "Sustainable Architectural Design Trends",
+        date: "December 30, 2024",
+      },
+    ],
+    trendingNewsTwo: [
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      // Add more news items as needed
+    ],
+  },
+  "Real-Estate": {
+    heroImage: "./assets/hero-image.png",
+    heroTitle: "Real Estate Market Insights and Trends",
+    heroSubtitle:
+      "Understand the real estate market.  Trends that are shaping property investments.  Expert advice for buyers and sellers.",
+    newsItems: [
+      {
+        title: "Real Estate News 1",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title: "Real Estate News 2",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+    ],
+    trendingNewsOne: [
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title: "Innovative Housing Solutions for Urban Areas",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title: "Affordable Housing Projects Around the World",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-11.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+    ],
+    trendingNewsTwo: [
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title: "Real Estate Market Trends in 2024",
+        date: "March 6, 2024",
+      },
+      // Add more news items as needed
+    ],
+  },
+  Business: {
+    heroImage: "./assets/hero-image.png",
+    heroTitle: "Business Strategies For Modern Challenges",
+    heroSubtitle:
+      "Adapt and thrive in today's business landscape.  Innovative strategies for growth.  Insights from industry leaders.",
+    newsItems: [
+      {
+        title: "Business News 1",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title: "Business News 2",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
+    ],
+    trendingNewsOne: [
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title: "Business Strategies for Real Estate Investors",
+        date: "May 15, 2025",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title: "Commercial Real Estate: Opportunities and Risks",
+        date: "June 20, 2025",
+      },
+      {
+        imageUrl: "./assets/property/property-11.png",
+        title: "Real Estate Financing in a Changing Market",
+        date: "July 25, 2025",
+      },
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title: "Mergers and Acquisitions in the Real Estate Sector",
+        date: "August 30, 2025",
+      },
+    ],
+    trendingNewsTwo: [
+      {
+        imageUrl: "./assets/property/property-12.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-8.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-9.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      {
+        imageUrl: "./assets/property/property-10.png",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        date: "March 6, 2024",
+      },
+      // Add more news items as needed
+    ],
+  },
+};
+
+function changeContent(tabName) {
+  const data = contentData[tabName];
+
+  // Update Hero Section
+  document.getElementById("heroTitle").innerText = data.heroTitle;
+  document.getElementById("heroSubtitle").innerText = data.heroSubtitle;
+  document.getElementById("heroImage").src = data.heroImage;
+  const trendingNewsOneContainer = document.getElementById(
+    "trendingNewsOneContainer"
+  );
+  const trendingNewsTwoContainer = document.getElementById(
+    "trendingNewsTwoContainer"
+  );
+
+  // Update News Cards Section
+  const newsCards = document.getElementById("newsCards");
+  newsCards.innerHTML = "";
+
+  data.newsItems.forEach((news) => {
+    const newsCard = `
+          <div class="row align-items-center position-relative mt-3">
+              <div class="col-md-5">
+                  <span class="badge position-absolute top-0 start-0 m-3 text-light">${tabName}</span>
+                  <img src="${news.image}" alt="Card-image" class="h-100 w-100">
+              </div>
+              <div class="col-md-7">
+                  <div class="mt-md-0 mt-3 mt-lg-0">
+                      <h6>${news.title}</h6>
+                      <p style="font-size: 13px;">${news.description}</p>
+                  </div>
+              </div>
+          </div>
+      `;
+    newsCards.innerHTML += newsCard;
+  });
+
+  trendingNewsOneContainer.innerHTML = "";
+  data.trendingNewsOne.forEach((news) => {
+    trendingNewsOneContainer.innerHTML += `
+          <div class="row">
+            <div class="col-4">
+              <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
+            </div>
+            <div class="col-8">
+              <h6 class="card-title">${news.title}</h6>
+              <p class="mb-0 mt-2">${news.date}</p>
+            </div>
+            <hr class="mt-3">
+          </div>
+      `;
+  });
+
+  trendingNewsTwoContainer.innerHTML = "";
+  data.trendingNewsTwo.forEach((news) => {
+    trendingNewsTwoContainer.innerHTML += `
+    <div class="row">
+    <div class="col-4">
+      <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
+    </div>
+    <div class="col-8">
+      <h6 class="card-title">${news.title}</h6>
+      <p class="mb-0 mt-2">${news.date}</p>
+    </div>
+    <hr class="mt-3">
+  </div>
+      `;
+  });
+}
+
+// Initialize with Heritage content
+changeContent("Heritage");
