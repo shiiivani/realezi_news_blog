@@ -5,6 +5,7 @@
 
 .custom-navlink {
     font-size: 18px;
+    font-weight: 500;
 }
 
 .nav-link.inactive {
@@ -15,10 +16,17 @@
 
 .nav-link {
     font-size: 18px;
+    color: black;
 }
 
 .nav-tabs .nav-link.active {
-    border-bottom: 2px solid black;
+    background-color: #111F3C;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.nav-tabs .nav-link:hover {
     color: black;
 }
 
@@ -282,11 +290,16 @@ nav {
   
 @media (max-width: 767.98px) {
     .custom-navlink {
-        font-size: 12px;
+        font-size: 10px;
+        font-weight: 600;
     }
 
     #pills-Bengaluru-tab {
         width: 100%;
+    }
+
+    .nav-tabs .nav-link.active {
+        width: 110%;
     }
 }
 
@@ -297,11 +310,16 @@ nav {
     }
 
     .custom-navlink {
-        font-size: 12px;
+        font-size: 10px;
+        font-weight: 600;
     }
 
     #pills-Bengaluru-tab {
         width: 100%;
+    }
+
+    .nav-tabs .nav-link.active {
+        width: 110%;
     }
 }
 
