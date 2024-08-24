@@ -5,15 +5,15 @@ document
     var arrowIcon = document.getElementById("arrowIcon").querySelector("i");
 
     if (cardContainer.classList.contains("collapse")) {
-        cardContainer.classList.remove("collapse");
-        cardContainer.classList.add("show");
-        arrowIcon.classList.remove("fa-arrow-down");
-        arrowIcon.classList.add("fa-arrow-up");
+      cardContainer.classList.remove("collapse");
+      cardContainer.classList.add("show");
+      arrowIcon.classList.remove("fa-arrow-down");
+      arrowIcon.classList.add("fa-arrow-up");
     } else {
-        cardContainer.classList.remove("show");
-        cardContainer.classList.add("collapse");
-        arrowIcon.classList.remove("fa-arrow-up");
-        arrowIcon.classList.add("fa-arrow-down");
+      cardContainer.classList.remove("show");
+      cardContainer.classList.add("collapse");
+      arrowIcon.classList.remove("fa-arrow-up");
+      arrowIcon.classList.add("fa-arrow-down");
     }
   });
 
@@ -248,24 +248,32 @@ const contentData = {
       "Stay ahead with the latest in tech.  Innovations that are changing the world.  Explore the future of technology today.",
     newsItems: [
       {
-        imageUrl: "./assets/property/property-10.png",
-        title: "Technology in Heritage Conservation",
-        date: "January 15, 2025",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
       },
       {
-        imageUrl: "./assets/property/property-11.png",
-        title: "Preserving Heritage Through Innovation",
-        date: "February 20, 2025",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
       },
       {
-        imageUrl: "./assets/property/property-12.png",
-        title: "Blending Technology with Historical Sites",
-        date: "March 25, 2025",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
       },
       {
-        imageUrl: "./assets/property/property-8.png",
-        title: "The Impact of Digital Tools on Heritage Preservation",
-        date: "April 30, 2025",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
       },
     ],
     trendingNewsOne: [
