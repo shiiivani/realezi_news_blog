@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg py-3 px-md-5">
         <div class="container-fluid gap-md-5">
             <a class="navbar-brand" href="#">
-                <img src="./assets/logo.png" alt="nav-logo" style="height: 35px;">
+                <img src="./assets/logo.png" alt="nav-logo" style="height: 37px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
-                    <li class="nav-item col-6 col-sm-4 col-md-1 mb-2">
+                    <li class="nav-item">
                         <a class="nav-link text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
@@ -323,13 +323,12 @@
                     <div class="fs-1 text-dark">Unlock property market secrets</div>
                     <div class="text-dark fs-5">Get insider insights on trends, sustainability, and strategies</div>
                 </div>
-                <div class="input-group mt-4 w-75 mx-auto mx-md-0">
-                    <input type="text" class="form-control py-2" placeholder="Enter email ID"
-                        aria-label="Enter email ID" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="subscribe-btn py-2 rounded" type="button">Subscribe</button>
+                <form class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start mt-4">
+                    <div class="form-group me-2 mb-md-0 mb-3">
+                        <input type="email" class="form-control py-2" placeholder="Enter email ID" />
                     </div>
-                </div>
+                    <button type="submit" class="subscribe-btn py-1 px-3 rounded">Subscribe</button>
+                </form>
             </div>
 
             <!-- Third Column: Image on the right -->
@@ -888,7 +887,7 @@
         </div>
 
         <div class="text-center mt-5">
-            <button type="button" class="btn btn-outline-dark px-4 py-2 toggle-collapse" id="viewMoreBtn">
+            <button type="button" class="view-more-btn rounded px-4 py-2 toggle-collapse" id="viewMoreBtn">
                 View More
                 <span id="arrowIcon">
                     <i class="fa-solid fa-arrow-down ms-2"></i>
@@ -918,12 +917,16 @@
                     <div class="row">
                         <div class="col-md-3 mx-auto mb-4 mt-md-0 mt-5">
                             <h6 class="fw-normal mb-5 fs-1 underline-animation">Company</h6>
-                            <a href="/about" class="d-block mb-2 footer-link text-decoration-none">About us</a>
-                            <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Blog</a>
-                            <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Career</a>
-                            <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Contact Support</a>
-                            <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Get in touch</a>
-                            <a href="/about" class="d-block footer-link text-decoration-none">FAQs</a>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="footer-link text-decoration-none">About us</a></li>
+                                <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Blog</a></li>
+                                <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Career</a></li>
+                                <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Contact
+                                        Support</a></li>
+                                <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Get in touch</a>
+                                </li>
+                                <li><a href="#" class="footer-link text-decoration-none">FAQs</a></li>
+                            </ul>
                             <button class="btn rounded-pill mt-3 btn-light px-4 party-btn">
                                 We are hiring <span class="party-emoji">🎉</span>
                             </button>
@@ -933,23 +936,28 @@
                             <h6 class="fw-normal mb-5 fs-1 underline-animation">Solutions</h6>
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Find or right
-                                        property</a>
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Sell or Rent
-                                        Your Property</a>
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Build your
-                                        home from scratch</a>
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Interior
-                                        Designing & Decor</a>
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Solar
-                                        Panel</a>
-                                    <a href="/about" class="d-block footer-link text-decoration-none">Home Loans</a>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Find or
+                                                right property</a></li>
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Sell or
+                                                Rent Your Property</a></li>
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Build your
+                                                home from scratch</a></li>
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Interior
+                                                Designing & Decor</a></li>
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Solar
+                                                Panel</a></li>
+                                        <li><a href="#" class="footer-link text-decoration-none">Home Loans</a></li>
+                                    </ul>
                                 </div>
                                 <div class="col-6">
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Legal Aid</a>
-                                    <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Porter
-                                        Services</a>
-                                    <a href="/about" class="d-block footer-link text-decoration-none">For Business</a>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Legal
+                                                Aid</a></li>
+                                        <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Porter
+                                                Services</a></li>
+                                        <li><a href="#" class="footer-link text-decoration-none">For Business</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -960,8 +968,11 @@
                                 <button class="fire-btn btn btn-light rounded-pill mb-3 px-4">Refer
                                     & Earn <span class="fire-emoji">🔥</span></button>
                             </div>
-                            <a href="/about" class="d-block mb-2 footer-link text-decoration-none">Realezi Community</a>
-                            <a href="/about" class="d-block footer-link text-decoration-none">Customers</a>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="footer-link text-decoration-none">Realezi
+                                        Community</a></li>
+                                <li><a href="#" class="footer-link text-decoration-none">Customers</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
