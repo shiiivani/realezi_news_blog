@@ -101,28 +101,16 @@ nav {
     border-bottom-right-radius: 30px;
 }
 
-.underline-animation {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: -20px;
-    left: 0;
-    background-color: currentColor;
-    transition: width 0.3s ease-in-out;
-}
-
-.underline-animation:hover::after {
-    width: 100%;
-}
-
 .footer-link:hover {
+    color: #EC7100;
+}
+
+.footer-secondary-link {
+    color: white;
+    font-size: 16px;
+}
+
+.footer-secondary-link:hover {
     color: #EC7100;
 }
 
@@ -130,7 +118,7 @@ nav {
     position: relative;
     display: inline-block;
     color: inherit;
-    font-size: 18px;;
+    font-size: 16px;
     color: white;
 }
 

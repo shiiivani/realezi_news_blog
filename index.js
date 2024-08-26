@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const riveInstance = new rive.Rive({
+    src: './assets/animation/Party-popper.riv',
+      canvas: document.getElementById('riveCanvas'),
+      autoplay: true,
+  });
+});
+
+
+
 document
   .querySelector(".toggle-collapse")
   .addEventListener("click", function () {
