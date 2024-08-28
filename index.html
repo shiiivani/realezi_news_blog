@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        <a class="header-link text-decoration-none" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Resources</a>
+                        <a class="header-link text-decoration-none" href="#">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Buy or Rent</a>
+                        <a class="header-link text-decoration-none" href="#">Buy or Rent</a>
                     </li>
                 </ul>
                 <button class="btn btn-outline-light px-3" type="submit">Post Your Property</button>
@@ -47,38 +47,38 @@
     <section class="py-3 rounded-pill" style="background-color: #F7F9FF;">
         <div class="container">
             <ul class="nav nav-tabs border-0 d-flex justify-content-around flex-wrap gap-0" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active text-nowrap custom-navlink px-1" id="Heritage-tab"
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link active text-nowrap custom-navlink px-1 border-0" id="Heritage-tab"
                         data-bs-toggle="tab" data-bs-target="#Heritage" type="button" role="tab"
                         aria-controls="Heritage" aria-selected="true" onclick="changeContent('Heritage')">
                         <span class="px-md-3 px-0">Heritage</span>
                     </button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1" id="Technology-tab" data-bs-toggle="tab"
-                        data-bs-target="#Technology" type="button" role="tab" aria-controls="Technology"
-                        aria-selected="false" onclick="changeContent('Technology')">
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Technology-tab"
+                        data-bs-toggle="tab" data-bs-target="#Technology" type="button" role="tab"
+                        aria-controls="Technology" aria-selected="false" onclick="changeContent('Technology')">
                         <span class="px-md-3 px-0">Technology</span>
                     </button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1" id="Architecture-tab" data-bs-toggle="tab"
-                        data-bs-target="#Architecture" type="button" role="tab" aria-controls="Architecture"
-                        aria-selected="false" onclick="changeContent('Architecture')">
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Architecture-tab"
+                        data-bs-toggle="tab" data-bs-target="#Architecture" type="button" role="tab"
+                        aria-controls="Architecture" aria-selected="false" onclick="changeContent('Architecture')">
                         <span class="px-md-3 px-0">Architecture</span>
                     </button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1" id="Real-Estate-tab" data-bs-toggle="tab"
-                        data-bs-target="#Real-Estate" type="button" role="tab" aria-controls="Real-Estate"
-                        aria-selected="false" onclick="changeContent('Real-Estate')">
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Real-Estate-tab"
+                        data-bs-toggle="tab" data-bs-target="#Real-Estate" type="button" role="tab"
+                        aria-controls="Real-Estate" aria-selected="false" onclick="changeContent('Real-Estate')">
                         <span class="px-md-3 px-0">Real-Estate</span>
                     </button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1" id="Business-tab" data-bs-toggle="tab"
-                        data-bs-target="#Business" type="button" role="tab" aria-controls="Business"
-                        aria-selected="false" onclick="changeContent('Business')">
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Business-tab"
+                        data-bs-toggle="tab" data-bs-target="#Business" type="button" role="tab"
+                        aria-controls="Business" aria-selected="false" onclick="changeContent('Business')">
                         <span class="px-md-3 px-0">Business</span>
                     </button>
                 </li>
@@ -91,7 +91,7 @@
         <div class="fs-1 fw-bold text-center">Hot News</div>
         <div class="row mt-5">
             <!-- left side section -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="position-relative">
                     <span id="heroContent" class="position-absolute bottom-0 start-0 m-4 text-light">
                         <p id="heroTitle" class="fs-2 fw-bold">Vision Pro y Spatial Computer: La revolución de la
@@ -105,7 +105,7 @@
             </div>
             <!-- right side section -->
 
-            <div class="col-md-6 mt-5 mt-md-0 mt-lg-0 custom-scrollbar" style="overflow-y: auto; height: 460px;">
+            <div class="col-md-6 col-12 mt-5 mt-md-0 mt-lg-0 custom-scrollbar" style="overflow-y: auto; height: 47vh;">
                 <div id="newsCards">
                     <!-- News cards will be dynamically generated here -->
                 </div>
@@ -121,43 +121,44 @@
             <div class="d-flex flex-wrap align-items-center mb-2">
                 <ul class="nav nav-pills border-0 d-flex flex-wrap me-auto" id="pills-tab" role="tablist">
                     <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark active border bg-light w-100 text-nowrap"
-                            id="pills-Mumbai-tab" data-bs-toggle="pill" data-bs-target="#pills-Mumbai" type="button"
-                            role="tab" aria-controls="pills-Mumbai" aria-selected="true"
+                        <button class="nav-link text-dark active border-0 fs-6 w-100 text-nowrap" id="pills-Mumbai-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Mumbai" type="button" role="tab"
+                            aria-controls="pills-Mumbai" aria-selected="true"
                             onclick="changeCity('Mumbai')">Mumbai</button>
                     </li>
                     <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Delhi-tab"
+                        <button class="nav-link text-dark border-0 fs-6 w-100 text-nowrap" id="pills-Delhi-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button" role="tab"
                             aria-controls="pills-Delhi" aria-selected="false"
                             onclick="changeCity('Delhi')">Delhi</button>
                     </li>
                     <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Baroda-tab"
+                        <button class="nav-link text-dark border-0 fs-6 w-100 text-nowrap" id="pills-Baroda-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button" role="tab"
                             aria-controls="pills-Baroda" aria-selected="false"
                             onclick="changeCity('Baroda')">Baroda</button>
                     </li>
                     <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Pune-tab"
+                        <button class="nav-link text-dark border-0 fs-6 w-100 text-nowrap" id="pills-Pune-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button" role="tab"
                             aria-controls="pills-Pune" aria-selected="false" onclick="changeCity('Pune')">Pune</button>
                     </li>
                     <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Chennai-tab"
+                        <button class="nav-link text-dark border-0 fs-6 w-100 text-nowrap" id="pills-Chennai-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Chennai" type="button" role="tab"
                             aria-controls="pills-Chennai" aria-selected="false"
                             onclick="changeCity('Chennai')">Chennai</button>
                     </li>
                     <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light text-nowrap" id="pills-Bengaluru-tab"
+                        <button class="nav-link text-dark border-0 fs-6 text-nowrap" id="pills-Bengaluru-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Bengaluru" type="button" role="tab"
                             aria-controls="pills-Bengaluru" aria-selected="false"
                             onclick="changeCity('Bengaluru')">Bengaluru</button>
                     </li>
                 </ul>
                 <div class="col-md-1 ms-auto col-12">
-                    <button class="text-dark border bg-light py-2 rounded shadow-sm w-100">Sort</button>
+                    <button class="text-dark border-0 fs-6 py-2 rounded shadow-sm w-100"
+                        style="background-color: #F7F9FF;">Sort</button>
                 </div>
             </div>
         </div>
@@ -175,21 +176,22 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5 class="card-title" id="card-title-1">Villa in Mumbai with Sea View</h5>
-                                    <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Share">
-                                        <i class="fa-solid fa-share-nodes"></i>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-                                <p class="card-text mt-3" id="card-text-1">Very nice property in sec24 Rohini near
+                                <p class="card-text" id="card-text-1">Very nice property in sec24 Rohini near
                                     Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                     property...
                                 </p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="mb-0">March 6, 2024</h6>
+                                    <div class="mb-0">March 6, 2024</div>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -205,20 +207,21 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5 class="card-title" id="card-title-2">Apartment in Mumbai Suburbs</h5>
-                                    <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Share">
-                                        <i class="fa-solid fa-share-nodes"></i>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-                                <p class="card-text mt-3" id="card-text-2">Very nice property in sec24 Rohini near
+                                <p class="card-text" id="card-text-2">Very nice property in sec24 Rohini near
                                     Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                     property...</p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="mb-0">March 6, 2024</h6>
+                                    <div class="mb-0">March 6, 2024</div>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -228,8 +231,8 @@
             </div>
 
             <!-- Trending section one right side section -->
-            <div class="col-md-4 bg-primary p-3 bg-opacity-10 custom-scrollbar"
-                style="overflow-y: auto; height: 470px;">
+            <div class="col-md-4 p-3 custom-scrollbar"
+                style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
 
                 <div id="trendingNewsOneContainer"></div>
             </div>
@@ -251,20 +254,21 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5 class="card-title" id="card-title-3">Luxury Apartment in Mumbai</h5>
-                                    <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Share">
-                                        <i class="fa-solid fa-share-nodes"></i>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-                                <p class="card-text mt-3" id="card-text-3">Very nice property in sec24 Rohini near
+                                <p class="card-text" id="card-text-3">Very nice property in sec24 Rohini near
                                     Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                     property...</p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="mb-0">March 6, 2024</h6>
+                                    <div class="mb-0">March 6, 2024</div>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -280,20 +284,21 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5 class="card-title" id="card-title-4">Apartment in Mumbai Suburbs</h5>
-                                    <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Share">
-                                        <i class="fa-solid fa-share-nodes"></i>
+                                    <button type="button" class="btn btn-transparent border-0 mt-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-                                <p class="card-text mt-3" id="card-text-4">Very nice property in sec24 Rohini near
+                                <p class="card-text" id="card-text-4">Very nice property in sec24 Rohini near
                                     Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                     property...</p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="mb-0">March 6, 2024</h6>
+                                    <div class="mb-0">March 6, 2024</div>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0">Read More</button>
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -303,8 +308,8 @@
             </div>
 
             <!-- Trending section two right side section -->
-            <div class="col-md-4 bg-primary p-3 bg-opacity-10 custom-scrollbar"
-                style="overflow-y: auto; height: 470px;">
+            <div class="col-md-4 p-3 custom-scrollbar"
+                style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
                 <!-- trending  news -->
                 <div id="trendingNewsTwoContainer"></div>
             </div>
@@ -325,7 +330,7 @@
                     <div class="text-dark fs-5">Get insider insights on trends, sustainability, and strategies</div>
                 </div>
                 <form class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start mt-4">
-                    <div class="form-group me-2 mb-md-0 mb-3">
+                    <div class="form-group me-2 mb-md-0 mb-3 w-50">
                         <input type="email" class="form-control py-2" placeholder="Enter email ID" />
                     </div>
                     <button type="submit" class="subscribe-btn py-1 px-3 rounded">Subscribe</button>
@@ -361,7 +366,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -383,7 +388,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -410,7 +415,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -432,7 +437,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -442,11 +447,11 @@
                     </div>
                 </div>
             </div>
-            <a class="btn rounded-circle position-absolute top-50 start-0 translate-middle-y carousel-button"
+            <a class="btn rounded-circle position-absolute carousel-button" style="top: 40%; left:-2%;"
                 href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                 <i class="fa-solid fa-arrow-left text-white fa-2x"></i>
             </a>
-            <a class="btn rounded-circle position-absolute top-50 end-0 translate-middle-y carousel-button"
+            <a class="btn rounded-circle position-absolute carousel-button" style="top: 40%; right: -2%;"
                 href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                 <i class="fa-solid fa-arrow-right text-white fa-2x"></i>
             </a>
@@ -473,7 +478,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -500,7 +505,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -527,7 +532,7 @@
                                                 fuerzas a favor de las organizaciones</h4>
                                             <div class="d-flex justify-content-between align-items-center mt-5">
                                                 <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0">Read More</button>
+                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
                                             </div>
                                         </div>
                                     </div>
@@ -537,12 +542,12 @@
                     </div>
                 </div>
             </div>
-            <a class="btn rounded-circle position-absolute start-0 translate-middle-y carousel-button"
-                href="#carouselMobile" role="button" data-bs-slide="prev" style="top: 40%;">
+            <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; left:-3%;"
+                href="#carouselMobile" role="button" data-bs-slide="prev">
                 <i class="fa-solid fa-arrow-left text-white fa-2x"></i>
             </a>
-            <a class="btn rounded-circle position-absolute end-0 translate-middle-y carousel-button"
-                href="#carouselMobile" role="button" data-bs-slide="next" style="top: 40%;">
+            <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; right: -2%;"
+                href="#carouselMobile" role="button" data-bs-slide="next">
                 <i class="fa-solid fa-arrow-right text-white fa-2x"></i>
             </a>
         </div>
@@ -555,24 +560,24 @@
             <div class="d-flex flex-wrap align-items-center mb-2">
                 <ul class="nav nav-pills border-0 d-flex flex-wrap mx-auto mx-md-0 mb-2" id="pills-tab" role="tablist">
                     <li class="nav-item mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark active border bg-light w-100 text-nowrap"
-                            id="pills-Expertise-tab" data-bs-toggle="pill" data-bs-target="#pills-Expertise"
-                            type="button" role="tab" aria-controls="pills-Expertise"
-                            aria-selected="true">Expertise</button>
+                        <button class="nav-link text-dark active border-0 w-100 text-nowrap" id="pills-Expertise-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Expertise" type="button" role="tab"
+                            aria-controls="pills-Expertise" aria-selected="true">Expertise</button>
                     </li>
                     <li class="nav-item mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Category-tab"
+                        <button class="nav-link text-dark border-0 w-100 text-nowrap" id="pills-Category-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Category" type="button" role="tab"
                             aria-controls="pills-Category" aria-selected="false">Category</button>
                     </li>
                     <li class="nav-item mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border bg-light w-100 text-nowrap" id="pills-Type-tab"
+                        <button class="nav-link text-dark border-0 w-100 text-nowrap" id="pills-Type-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-Type" type="button" role="tab"
                             aria-controls="pills-Type" aria-selected="false">Type</button>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-center col-md-1 ms-md-auto col-12 px-4">
-                    <button class="text-dark border bg-light py-2 rounded shadow-sm w-100">Sort</button>
+                <div class="col-md-1 ms-auto col-12">
+                    <button class="text-dark border-0 fs-6 py-2 rounded shadow-sm w-100"
+                        style="background-color: #F7F9FF;">Sort</button>
                 </div>
             </div>
         </div>
@@ -587,12 +592,12 @@
                         <!-- Title and Share Button Row -->
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Share">
-                                <i class="fa-solid fa-share-nodes"></i>
+                                <img src="./assets/icons/share-icon.svg" alt="">
                             </button>
                         </div>
-                        <p class="card-text mt-3">
+                        <p class="card-text">
                             Very nice property in sec24 Rohini near Rithala metro station within 1km and is
                             ISKCON temple 200m.
                             More about this property...
@@ -600,11 +605,10 @@
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">March 6, 2024</h6>
+                            <div class="mb-0">March 6, 2024</div>
                             <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0">
-                                    Read More
-                                </button>
+                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                    More</button>
                             </div>
                         </div>
                     </div>
@@ -620,12 +624,12 @@
                         <!-- Title and Share Button Row -->
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Share">
-                                <i class="fa-solid fa-share-nodes"></i>
+                                <img src="./assets/icons/share-icon.svg" alt="">
                             </button>
                         </div>
-                        <p class="card-text mt-3">
+                        <p class="card-text">
                             Very nice property in sec24 Rohini near Rithala metro station within 1km and is
                             ISKCON temple 200m.
                             More about this property...
@@ -633,11 +637,10 @@
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">March 6, 2024</h6>
+                            <div class="mb-0">March 6, 2024</div>
                             <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0">
-                                    Read More
-                                </button>
+                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                    More</button>
                             </div>
                         </div>
                     </div>
@@ -653,12 +656,12 @@
                         <!-- Title and Share Button Row -->
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Share">
-                                <i class="fa-solid fa-share-nodes"></i>
+                                <img src="./assets/icons/share-icon.svg" alt="">
                             </button>
                         </div>
-                        <p class="card-text mt-3">
+                        <p class="card-text">
                             Very nice property in sec24 Rohini near Rithala metro station within 1km and is
                             ISKCON temple 200m.
                             More about this property...
@@ -666,11 +669,10 @@
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">March 6, 2024</h6>
+                            <div class="mb-0">March 6, 2024</div>
                             <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0">
-                                    Read More
-                                </button>
+                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                    More</button>
                             </div>
                         </div>
                     </div>
@@ -688,12 +690,12 @@
                         <!-- Title and Share Button Row -->
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Share">
-                                <i class="fa-solid fa-share-nodes"></i>
+                                <img src="./assets/icons/share-icon.svg" alt="">
                             </button>
                         </div>
-                        <p class="card-text mt-3">
+                        <p class="card-text">
                             Very nice property in sec24 Rohini near Rithala metro station within 1km and is
                             ISKCON temple 200m.
                             More about this property...
@@ -701,11 +703,10 @@
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">March 6, 2024</h6>
+                            <div class="mb-0">March 6, 2024</div>
                             <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0">
-                                    Read More
-                                </button>
+                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                    More</button>
                             </div>
                         </div>
                     </div>
@@ -721,12 +722,12 @@
                         <!-- Title and Share Button Row -->
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Share">
-                                <i class="fa-solid fa-share-nodes"></i>
+                                <img src="./assets/icons/share-icon.svg" alt="">
                             </button>
                         </div>
-                        <p class="card-text mt-3">
+                        <p class="card-text">
                             Very nice property in sec24 Rohini near Rithala metro station within 1km and is
                             ISKCON temple 200m.
                             More about this property...
@@ -734,11 +735,10 @@
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">March 6, 2024</h6>
+                            <div class="mb-0">March 6, 2024</div>
                             <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0">
-                                    Read More
-                                </button>
+                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                    More</button>
                             </div>
                         </div>
                     </div>
@@ -754,12 +754,12 @@
                         <!-- Title and Share Button Row -->
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Share">
-                                <i class="fa-solid fa-share-nodes"></i>
+                                <img src="./assets/icons/share-icon.svg" alt="">
                             </button>
                         </div>
-                        <p class="card-text mt-3">
+                        <p class="card-text">
                             Very nice property in sec24 Rohini near Rithala metro station within 1km and is
                             ISKCON temple 200m.
                             More about this property...
@@ -767,11 +767,10 @@
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">March 6, 2024</h6>
+                            <div class="mb-0">March 6, 2024</div>
                             <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0">
-                                    Read More
-                                </button>
+                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                    More</button>
                             </div>
                         </div>
                     </div>
@@ -792,12 +791,12 @@
                             <!-- Title and Share Button Row -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Share">
-                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <img src="./assets/icons/share-icon.svg" alt="">
                                 </button>
                             </div>
-                            <p class="card-text mt-3">
+                            <p class="card-text">
                                 Very nice property in sec24 Rohini near Rithala metro station within 1km and is ISKCON
                                 temple 200m.
                                 More about this property...
@@ -805,11 +804,10 @@
                         </div>
                         <div class="card-footer border-0 bg-transparent">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="mb-0">March 6, 2024</h6>
+                                <div class="mb-0">March 6, 2024</div>
                                 <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0">
-                                        Read More
-                                    </button>
+                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -826,13 +824,13 @@
                             <!-- Title and Share Button Row -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Share">
-                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <img src="./assets/icons/share-icon.svg" alt="">
                                 </button>
                             </div>
 
-                            <p class="card-text mt-3">
+                            <p class="card-text">
                                 Very nice property in sec24 Rohini near Rithala metro station within 1km and is ISKCON
                                 temple 200m.
                                 More about this property...
@@ -840,11 +838,10 @@
                         </div>
                         <div class="card-footer border-0 bg-transparent">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="mb-0">March 6, 2024</h6>
+                                <div class="mb-0">March 6, 2024</div>
                                 <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0">
-                                        Read More
-                                    </button>
+                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -861,12 +858,12 @@
                             <!-- Title and Share Button Row -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border" data-bs-toggle="tooltip"
+                                <button type="button" class="btn btn-transparent -0 mb-2" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Share">
-                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <img src="./assets/icons/share-icon.svg" alt="">
                                 </button>
                             </div>
-                            <p class="card-text mt-3">
+                            <p class="card-text">
                                 Very nice property in sec24 Rohini near Rithala metro station within 1km and is ISKCON
                                 temple 200m.
                                 More about this property...
@@ -874,11 +871,10 @@
                         </div>
                         <div class="card-footer border-0 bg-transparent">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="mb-0">March 6, 2024</h6>
+                                <div class="mb-0">March 6, 2024</div>
                                 <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0">
-                                        Read More
-                                    </button>
+                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        More</button>
                                 </div>
                             </div>
                         </div>
@@ -920,14 +916,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-transparent col-12 pt-4 col-lg-9 pt-lg-0">
+                    <div class="col-12 pt-4 col-lg-9 pt-lg-0">
                         <div class="content d-flex flex-wrap h-100">
                             <div class="menu-box col-12 pt-3 col-md-3 col-lg-3 pt-lg-0">
                                 <div class="main-heading">
                                     <h2 class="text-white text-capitalize fs-3 fw-normal m-0">company</h2>
                                     <hr class="text-white" />
                                 </div>
-                                <ul class="m-0 p-0 pt-3">
+                                <ul class="m-0 p-0 pt-3 list-unstyled">
                                     <li class="pb-2">
                                         <a href="#" class="footer-link text-decoration-none">About us</a>
                                     </li>
@@ -953,7 +949,7 @@
                                     <h2 class="text-white text-capitalize fs-3 fw-normal m-0">Solutions</h2>
                                     <hr class="text-white" />
                                 </div>
-                                <ul class="m-0 p-0 pt-3 col-6 col-lg-6">
+                                <ul class="list-unstyled m-0 p-0 pt-3 col-6 col-lg-6">
                                     <li class="pb-2">
                                         <a href="#" class="footer-link text-decoration-none">Find a Right Property</a>
                                     </li>
@@ -976,7 +972,7 @@
                                         <a href="#" class="footer-link text-decoration-none">Home Loans</a>
                                     </li>
                                 </ul>
-                                <ul class="m-0 p-0 pt-3 col-6 col-lg-6">
+                                <ul class="list-unstyled m-0 p-0 pt-3 col-6 col-lg-6">
                                     <li class="pb-2">
                                         <a href="#" class="footer-link text-decoration-none">Legal Aid</a>
                                     </li>
@@ -993,13 +989,13 @@
                                     <h2 class="text-white text-capitalize fs-3 fw-normal m-0">Community</h2>
                                     <hr class="text-white" />
                                 </div>
-                                <ul class="m-0 p-0 pt-3">
+                                <ul class="list-unstyled m-0 p-0 pt-3">
                                     <li class="pb-2">
                                         <div class="btn p-0">
                                             <button
-                                                class="btn btn-light rounded-pill mb-3 px-4 d-flex align-items-center">Refer
+                                                class="btn btn-light rounded-pill mb-3 px-4 d-flex align-items-center text-nowrap">Refer
                                                 &amp; Earn
-                                                <span class="ms-2">
+                                                <span class="ms-1 mb-1">
                                                     <img src="./assets/animation/fire-animation.gif" alt=""
                                                         width="22px">
                                                 </span>
@@ -1009,23 +1005,23 @@
                                     <li class="pb-2">
                                         <a href="#" class="footer-link text-decoration-none">Realezi Community</a>
                                     </li>
-                                    <li class="pb-2">
+                                    <li>
                                         <a href="#" class="footer-link text-decoration-none">Customers</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-12 col-lg-12 pt-2 pt-lg-0">
-                                <div class="row d-flex justify-content-between align-items-center">
-                                    <div class="col-12 p-0 m-0 text-start text-lg-start">
-                                        <button
-                                            class="btn rounded-pill mt-3 btn-light px-4 party-btn d-flex align-items-center">
-                                            We are hiring <span>
-                                                <canvas id="riveCanvas" width="40px" height="30vh"></canvas>
+                                <div class="row align-items-center mt-3">
+                                    <div class="col-lg-4 col-md-4 col-12 text-start">
+                                        <button class="btn rounded-pill btn-light party-btn d-flex align-items-center">
+                                            <span class="ms-2">We are hiring</span>
+                                            <span>
+                                                <canvas id="riveCanvas" width="40px" height="25vh"></canvas>
                                             </span>
                                         </button>
                                     </div>
                                     <div
-                                        class="col-12 d-flex justify-content-center justify-content-md-end gap-2 pt-3 pt-sm-5">
+                                        class="col-lg-8 col-md-8 col-12 d-flex justify-content-lg-end justify-content-center gap-2 pt-md-0 pt-sm-5">
                                         <button
                                             class="btn appstore-btn d-flex align-items-center justify-content-center gap-2">
                                             <svg class="appstore-icon" fill="currentcolor"
@@ -1080,8 +1076,10 @@
                     <p class="m-0 text-white col-12 col-md-12 text-md-start text-center col-lg-3">©2024 Realezi. All
                         rights
                         reserved</p>
-                    <span class="text-white col-12 text-center col-md-6 col-lg-3 text-lg-center">Made with love 🧡 from
-                        Realezi</span>
+                    <p class="text-white col-12 text-center col-md-6 col-lg-3 text-lg-center">Made with love
+                        <span class=""><img src="./assets/heart.png" alt="" class="ms-1 me-1 mb-1 mt-0"></span> from
+                        Realezi
+                    </p>
                     <ul
                         class="list-unstyled m-0 p-0 col-12 justify-content-center col-md-6 col-lg-3 d-flex gap-3 justify-content-lg-end">
                         <li>
