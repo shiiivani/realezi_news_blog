@@ -612,7 +612,7 @@ function changeContent(tabName) {
 
   data.newsItems.forEach((news) => {
     const newsCard = `
-          <div class="row align-items-center position-relative mt-0">
+          <div class="row align-items-center position-relative mb-2">
               <div class="col-md-5">
                   <span class="badge position-absolute top-1 start-2 ms- mt-0 text-light">${tabName}</span>
                   <img src="${news.image}" alt="Card-image" class="h-100 w-100">

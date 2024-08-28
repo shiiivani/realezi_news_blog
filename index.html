@@ -21,10 +21,21 @@
             <a class="navbar-brand" href="#">
                 <img src="./assets/logo.png" alt="nav-logo" style="height: 37px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fa-solid fa-bars text-white fa-xl"></i></span>
-            </button>
+
+            <span class="navbar-toggler border-0 bg-transparant" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <input id="checkbox" type="checkbox" class="navbar-toggler border-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <label class="toggle" for="checkbox">
+                    <div id="bar1" class="bars"></div>
+                    <div id="bar2" class="bars"></div>
+                    <div id="bar3" class="bars"></div>
+                    <div id="bar4" class="bars"></div>
+                    <div id="bar5" class="bars"></div>
+                </label>
+            </span>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
@@ -38,7 +49,8 @@
                         <a class="header-link text-decoration-none" href="#">Buy or Rent</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-light px-3" type="submit">Post Your Property</button>
+                <button class="btn btn-outline-light px-3 mt-lg-0 mt-md-0 mt-4" type="submit">Post Your
+                    Property</button>
             </div>
         </div>
     </nav>
@@ -91,7 +103,7 @@
         <div class="fs-1 fw-bold text-center">Hot News</div>
         <div class="row mt-5">
             <!-- left side section -->
-            <div class="col-md-6 col-12">
+            <div class="col-lg-6 col-md-12 col-12">
                 <div class="position-relative">
                     <span id="heroContent" class="position-absolute bottom-0 start-0 m-4 text-light">
                         <p id="heroTitle" class="fs-2 fw-bold">Vision Pro y Spatial Computer: La revolución de la
@@ -105,7 +117,8 @@
             </div>
             <!-- right side section -->
 
-            <div class="col-md-6 col-12 mt-5 mt-md-0 mt-lg-0 custom-scrollbar" style="overflow-y: auto; height: 47vh;">
+            <div class="col-lg-6 col-md-12 col-12 mt-5 mt-md-5 mt-lg-0 custom-scrollbar"
+                style="overflow-y: auto; height: 47vh;">
                 <div id="newsCards">
                     <!-- News cards will be dynamically generated here -->
                 </div>
@@ -165,9 +178,9 @@
 
         <div class="row align-items-center">
             <!-- let side section -->
-            <div class="col-md-8" id="property-cards">
+            <div class="col-lg-8 col-12" id="property-cards">
                 <div class="row mt-5">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12 col-12">
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" id="card-img-1"
                                 src="./assets/property/mumbai-1.jpg" alt="property-1">
@@ -198,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12 col-12">
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" id="card-img-2"
                                 src="./assets/property/mumbai-2.jpg" alt="property-2">
@@ -231,7 +244,7 @@
             </div>
 
             <!-- Trending section one right side section -->
-            <div class="col-md-4 p-3 custom-scrollbar"
+            <div class="col-lg-4 col-12 p-3 custom-scrollbar"
                 style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
 
                 <div id="trendingNewsOneContainer"></div>
@@ -243,9 +256,9 @@
     <section class="container">
         <div class="row align-items-center">
             <!-- left side section -->
-            <div class="col-md-8" id="property-cards">
+            <div class="col-lg-8 col-12" id="property-cards">
                 <div class="row mt-5">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12 col-12">
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" id="card-img-3"
                                 src="./assets/property/mumbai-3.jpg" alt="property-3">
@@ -275,7 +288,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12 col-12">
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" id="card-img-4"
                                 src="./assets/property/mumbai-2.jpg" alt="property-4">
@@ -308,7 +321,7 @@
             </div>
 
             <!-- Trending section two right side section -->
-            <div class="col-md-4 p-3 custom-scrollbar"
+            <div class="col-md-4 col-12 p-3 custom-scrollbar"
                 style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
                 <!-- trending  news -->
                 <div id="trendingNewsTwoContainer"></div>
@@ -584,7 +597,7 @@
 
         <div class="row mt-5">
             <!-- Property 5 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
                 <div class="card mb-5">
                     <img class="card-img-top position-relative" src="./assets/property/property-3.jpg" alt="property-1">
                     <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
@@ -616,7 +629,7 @@
             </div>
 
             <!-- Property 6 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
                 <div class="card mb-5">
                     <img class="card-img-top position-relative" src="./assets/property/property-5.jpg" alt="property-1">
                     <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
@@ -648,7 +661,7 @@
             </div>
 
             <!-- Property 7 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
                 <div class="card mb-5">
                     <img class="card-img-top position-relative" src="./assets/property/property-4.jpg" alt="property-1">
                     <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
@@ -682,7 +695,7 @@
 
         <div class="row justify-content-center">
             <!-- Property 8 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
                 <div class="card mb-5">
                     <img class="card-img-top position-relative" src="./assets/property/property-5.jpg" alt="property-1">
                     <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
@@ -714,7 +727,7 @@
             </div>
 
             <!-- Property 9 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
                 <div class="card mb-5">
                     <img class="card-img-top position-relative" src="./assets/property/property-2.jpg" alt="property-1">
                     <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
@@ -746,7 +759,7 @@
             </div>
 
             <!-- Property 10 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
                 <div class="card mb-5">
                     <img class="card-img-top position-relative" src="./assets/property/property-1.jpg" alt="property-1">
                     <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
@@ -782,7 +795,7 @@
         <div class="collapse card-container" id="cardContainer">
             <div class="row justify-content-center">
                 <!-- Property 5 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-12">
                     <div class="card mb-5">
                         <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
                             alt="property-1">
@@ -815,7 +828,7 @@
                 </div>
 
                 <!-- Property 6 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-12">
                     <div class="card mb-5">
                         <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
                             alt="property-1">
@@ -849,7 +862,7 @@
                 </div>
 
                 <!-- Property 7 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-12">
                     <div class="card mb-5">
                         <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
                             alt="property-1">
