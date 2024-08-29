@@ -142,20 +142,35 @@ body {
 }
 
 .nav-pills .nav-link.active {
-    background-color: #F7F9FF;
-    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+    background: #F7F9FF;
+    box-shadow: 6px 6px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
-.nav-pills .nav-item button, .sort-btn {
-    color: #090909;
+.nav-pills .nav-item button {
     padding: 0.7em 1.7em;
     font-size: 18px;
     border-radius: 0.5em;
-    background: #e8e8e8;
+    background: #F7F9FF;
     cursor: pointer;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #F7F9FF;
     transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    box-shadow: 2px 2px 4px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.nav-pills .nav-item button:hover {
+    border: 1px solid white;
+}
+
+.sort-btn {
+    color: #111F3C;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 6px 0px;
+}
+
+.sort-btn:hover {
+    color: white;
+    background-color: #24324e;
 }
 
 .hero-image {
