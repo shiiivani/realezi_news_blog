@@ -1,12 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const riveInstance = new rive.Rive({
-    src: './assets/animation/Party-popper.riv',
-      canvas: document.getElementById('riveCanvas'),
-      autoplay: true,
+    src: "./assets/animation/Party-popper.riv",
+    canvas: document.getElementById("riveCanvas"),
+    autoplay: true,
+    onLoad: () => {
+      riveInstance.resizeDrawingSurfaceToCanvas();
+    },
   });
 });
-
-
 
 document
   .querySelector(".toggle-collapse")
@@ -170,6 +171,20 @@ const contentData = {
     heroSubtitle:
       "Discover the latest updates on heritage topics.  Explore fascinating histories and cultures.  Stay informed about preservation efforts.",
     newsItems: [
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "./assets/property/property-7.png",
+      },
+      {
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        description:
+          "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
+        image: "/assets/property/property-7.png",
+      },
       {
         title:
           "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
@@ -608,24 +623,23 @@ function changeContent(tabName) {
 
   // Update News Cards Section
   const newsCards = document.getElementById("newsCards");
-  newsCards.innerHTML = "";
 
+  newsCards.innerHTML = "";
   data.newsItems.forEach((news) => {
-    const newsCard = `
-          <div class="row align-items-center position-relative mb-2">
-              <div class="col-md-5">
-                  <span class="badge position-absolute top-1 start-2 ms- mt-0 text-light">${tabName}</span>
-                  <img src="${news.image}" alt="Card-image" class="h-100 w-100">
-              </div>
-              <div class="col-md-7">
-                  <div class="mt-md-0 mt-3 mt-lg-0">
-                      <h6>${news.title}</h6>
-                      <p style="font-size: 13px;">${news.description}</p>
-                  </div>
-              </div>
-          </div>
-      `;
-    newsCards.innerHTML += newsCard;
+    newsCards.innerHTML += `
+        <div class="row align-items-center position-relative">
+            <div class="col-lg-5 col-12">
+                <span class="badge position-absolute top-1 start-1 mt-0 text-light">${tabName}</span>
+                <img src="${news.image}" alt="Card-image" class="w-100">
+            </div>
+            <div class="col-lg-7 col-12">
+                <div class="mt-3">
+                    <h6>${news.title}</h6>
+                    <p style="font-size: 13px;">${news.description}</p>
+                </div>
+            </div>
+        </div>
+    `;
   });
 
   trendingNewsOneContainer.innerHTML = "";

@@ -16,7 +16,7 @@
 
 <body>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg py-3 px-md-5">
+    <nav class="navbar navbar-expand-lg py-3 px-md-5 w-100">
         <div class="container-fluid gap-md-5">
             <a class="navbar-brand" href="#">
                 <img src="./assets/logo.png" alt="nav-logo" style="height: 37px;">
@@ -39,13 +39,13 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
-                    <li class="nav-item">
+                    <li class="nav-item mt-5 mt-lg-0 mt-md-0 mt-sm-0">
                         <a class="header-link text-decoration-none" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mt-3 mt-lg-0 mt-md-0 mt-sm-0">
                         <a class="header-link text-decoration-none" href="#">Resources</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mt-3 mt-lg-0 mt-md-0 mt-sm-0">
                         <a class="header-link text-decoration-none" href="#">Buy or Rent</a>
                     </li>
                 </ul>
@@ -97,311 +97,143 @@
             </ul>
         </div>
     </section>
-
-    <!-- hero section -->
-    <section class="container py-5">
-        <div class="fs-1 fw-bold text-center">Hot News</div>
-        <div class="row mt-5">
-            <!-- left side section -->
-            <div class="col-lg-6 col-md-12 col-12">
-                <div class="position-relative">
-                    <span id="heroContent" class="position-absolute bottom-0 start-0 m-4 text-light">
-                        <p id="heroTitle" class="fs-2 fw-bold">Vision Pro y Spatial Computer: La revolución de la
-                            realidad aumentada</p>
-                        <p id="heroSubtitle" class="fw-normal mt-3">Descubre cómo Vision Pro y Spatial Computer están
-                            transformando
-                            industrias con su potencial en la realidad aumentada. Conoce</p>
-                    </span>
-                    <img id="heroImage" src="./assets/hero-image.png" alt="hero-image" class="hero-image">
-                </div>
-            </div>
-            <!-- right side section -->
-
-            <div class="col-lg-6 col-md-12 col-12 mt-5 mt-md-5 mt-lg-0 custom-scrollbar"
-                style="overflow-y: auto; height: 47vh;">
-                <div id="newsCards">
-                    <!-- News cards will be dynamically generated here -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trending section one -->
-    <section class="container py-5">
-        <div class="text-center fs-1 fw-bold">What’s Trending</div>
-        <div class="row mt-5">
-            <!-- Button Container -->
-            <div class="d-flex flex-wrap align-items-center mb-2">
-                <ul class="nav nav-pills border-0 d-flex flex-wrap me-auto" id="pills-tab" role="tablist">
-                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark active border-0 fs-6 w-100 text-nowrap" id="pills-Mumbai-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Mumbai" type="button" role="tab"
-                            aria-controls="pills-Mumbai" aria-selected="true"
-                            onclick="changeCity('Mumbai')">Mumbai</button>
-                    </li>
-                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Delhi-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button" role="tab"
-                            aria-controls="pills-Delhi" aria-selected="false"
-                            onclick="changeCity('Delhi')">Delhi</button>
-                    </li>
-                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Baroda-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button" role="tab"
-                            aria-controls="pills-Baroda" aria-selected="false"
-                            onclick="changeCity('Baroda')">Baroda</button>
-                    </li>
-                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Pune-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button" role="tab"
-                            aria-controls="pills-Pune" aria-selected="false" onclick="changeCity('Pune')">Pune</button>
-                    </li>
-                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Chennai-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Chennai" type="button" role="tab"
-                            aria-controls="pills-Chennai" aria-selected="false"
-                            onclick="changeCity('Chennai')">Chennai</button>
-                    </li>
-                    <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark fs-6 text-nowrap" id="pills-Bengaluru-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Bengaluru" type="button" role="tab"
-                            aria-controls="pills-Bengaluru" aria-selected="false"
-                            onclick="changeCity('Bengaluru')">Bengaluru</button>
-                    </li>
-                </ul>
-                <div class="col-md-1 ms-auto col-12">
-                    <button class="fs-6 w-100 sort-btn">Sort</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center">
-            <!-- let side section -->
-            <div class="col-lg-8 col-12" id="property-cards">
-                <div class="row mt-5">
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="card mb-5">
-                            <img class="card-img-top position-relative" id="card-img-1"
-                                src="./assets/property/mumbai-1.jpg" alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                id="card-badge-1">Heritage</span>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title" id="card-title-1">Villa in Mumbai with Sea View</h5>
-                                    <button type="button" class="btn btn-transparent border-0 mb-2"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
-                                        <img src="./assets/icons/share-icon.svg" alt="">
-                                    </button>
-                                </div>
-                                <p class="card-text" id="card-text-1">Very nice property in sec24 Rohini near
-                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
-                                    property...
-                                </p>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
-                                    <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                            More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <main class="container">
+        <!-- hero section -->
+        <section class="py-5">
+            <div class="fs-1 fw-bold text-center">Hot News</div>
+            <div class="row mt-5">
+                <!-- Left Side (Image with Text) -->
+                <div class="col-lg-6 col-md-12 col-12 herosection mb-4">
+                    <div class="position-relative">
+                        <span id="heroContent" class="position-absolute bottom-0 start-0 m-4 text-light">
+                            <p id="heroTitle" class="fs-2 fw-bold">Vision Pro y Spatial Computer: La revolución de la
+                                realidad aumentada</p>
+                            <p id="heroSubtitle" class="fw-normal mt-3">Descubre cómo Vision Pro y Spatial Computer
+                                están transformando
+                                industrias con su potencial en la realidad aumentada. Conoce</p>
+                        </span>
+                        <img id="heroImage" src="./assets/hero-image.png" alt="hero-image" class="hero-image w-100">
                     </div>
+                </div>
 
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="card mb-5">
-                            <img class="card-img-top position-relative" id="card-img-2"
-                                src="./assets/property/mumbai-2.jpg" alt="property-2">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                id="card-badge-2">Heritage</span>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title" id="card-title-2">Apartment in Mumbai Suburbs</h5>
-                                    <button type="button" class="btn btn-transparent border-0 mb-2"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
-                                        <img src="./assets/icons/share-icon.svg" alt="">
-                                    </button>
-                                </div>
-                                <p class="card-text" id="card-text-2">Very nice property in sec24 Rohini near
-                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
-                                    property...</p>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
-                                    <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                            More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Right Side (Scrollable Content) -->
+                <div class="col-lg-6 col-md-12 col-12 rightside">
+                    <div id="newsCards" class="overflow-y-auto overflow-x-hidden custom-scrollbar">
+                        <!-- Add more scrollable content here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending section one -->
+        <section class="py-5">
+            <div class="text-center fs-1 fw-bold">What’s Trending</div>
+            <div class="row mt-5">
+                <!-- Button Container -->
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <ul class="nav nav-pills border-0 d-flex flex-wrap me-auto" id="pills-tab" role="tablist">
+                        <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark active border-0 fs-6 w-100 text-nowrap"
+                                id="pills-Mumbai-tab" data-bs-toggle="pill" data-bs-target="#pills-Mumbai" type="button"
+                                role="tab" aria-controls="pills-Mumbai" aria-selected="true"
+                                onclick="changeCity('Mumbai')">Mumbai</button>
+                        </li>
+                        <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Delhi-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button" role="tab"
+                                aria-controls="pills-Delhi" aria-selected="false"
+                                onclick="changeCity('Delhi')">Delhi</button>
+                        </li>
+                        <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Baroda-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button" role="tab"
+                                aria-controls="pills-Baroda" aria-selected="false"
+                                onclick="changeCity('Baroda')">Baroda</button>
+                        </li>
+                        <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Pune-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button" role="tab"
+                                aria-controls="pills-Pune" aria-selected="false"
+                                onclick="changeCity('Pune')">Pune</button>
+                        </li>
+                        <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Chennai-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Chennai" type="button" role="tab"
+                                aria-controls="pills-Chennai" aria-selected="false"
+                                onclick="changeCity('Chennai')">Chennai</button>
+                        </li>
+                        <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark fs-6 text-nowrap" id="pills-Bengaluru-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Bengaluru" type="button" role="tab"
+                                aria-controls="pills-Bengaluru" aria-selected="false"
+                                onclick="changeCity('Bengaluru')">Bengaluru</button>
+                        </li>
+                    </ul>
+                    <div class="col-md-1 ms-auto col-12">
+                        <button class="fs-6 w-100 sort-btn">Sort</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Trending section one right side section -->
-            <div class="col-lg-4 col-12 p-3 custom-scrollbar"
-                style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
-
-                <div id="trendingNewsOneContainer"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trending section two -->
-    <section class="container">
-        <div class="row align-items-center">
-            <!-- left side section -->
-            <div class="col-lg-8 col-12" id="property-cards">
-                <div class="row mt-5">
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="card mb-5">
-                            <img class="card-img-top position-relative" id="card-img-3"
-                                src="./assets/property/mumbai-3.jpg" alt="property-3">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                id="card-badge-3">Heritage</span>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title" id="card-title-3">Luxury Apartment in Mumbai</h5>
-                                    <button type="button" class="btn btn-transparent border-0 mb-2"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
-                                        <img src="./assets/icons/share-icon.svg" alt="">
-                                    </button>
-                                </div>
-                                <p class="card-text" id="card-text-3">Very nice property in sec24 Rohini near
-                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
-                                    property...</p>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
-                                    <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                            More</button>
+            <div class="row align-items-center">
+                <!-- let side section -->
+                <div class="col-lg-8 col-12" id="property-cards">
+                    <div class="row mt-5">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-img-1"
+                                    src="./assets/property/mumbai-1.jpg" alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-1">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title" id="card-title-1">Villa in Mumbai with Sea View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
                                     </div>
+                                    <p class="card-text" id="card-text-1">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="card mb-5">
-                            <img class="card-img-top position-relative" id="card-img-4"
-                                src="./assets/property/mumbai-2.jpg" alt="property-4">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                id="card-badge-4">Heritage</span>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title" id="card-title-4">Apartment in Mumbai Suburbs</h5>
-                                    <button type="button" class="btn btn-transparent border-0 mt-0 mb-2"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
-                                        <img src="./assets/icons/share-icon.svg" alt="">
-                                    </button>
-                                </div>
-                                <p class="card-text" id="card-text-4">Very nice property in sec24 Rohini near
-                                    Rithala metro station within 1km and is ISKCON temple 200m. More about this
-                                    property...</p>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
-                                    <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                            More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trending section two right side section -->
-            <div class="col-lg-4 col-12 p-3 custom-scrollbar"
-                style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
-                <!-- trending  news -->
-                <div id="trendingNewsTwoContainer"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container py-5">
-        <div class="subscribe-section row py-5 border justify-content-center align-items-center text-center">
-            <!-- First Column: Image on the left -->
-            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-                <img src="./assets/icons/3dicons.png" alt="3D Icon" class="img-fluid">
-            </div>
-
-            <!-- Second Column: Text and Input Field -->
-            <div class="col-12 col-md-6">
-                <div class="text-center text-md-start">
-                    <div class="fs-1 text-dark">Unlock property market secrets</div>
-                    <div class="text-dark fs-5">Get insider insights on trends, sustainability, and strategies</div>
-                </div>
-                <form class="d-md-flex d-block align-items-center justify-content-center justify-content-md-start mt-4">
-                    <div class="form-group mb-md-0 mb-3 w-75 mx-md-0 mx-auto">
-                        <input type="email" class="form-control py-2" placeholder="Enter email ID" />
-                    </div>
-                    <button type="submit" class="subscribe-btn py-1 px-3 rounded ms-md-3 ms-0">Subscribe</button>
-                </form>
-            </div>
-
-            <!-- Third Column: Image on the right -->
-            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mt-4 mt-md-0">
-                <img src="./assets/pattern.png" alt="Pattern" class="img-fluid">
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured blog section -->
-    <section class="container py-5">
-        <div class="text-center fs-1 fw-bold mb-5">Featured Blogs</div>
-        <div id="carouselExampleIndicators" class="carousel slide position-relative d-none d-md-block">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-md-4">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
-                                    </div>
-                                    <!-- Content Column -->
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
-                                            </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-md-4">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
+
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-img-2"
+                                    src="./assets/property/mumbai-2.jpg" alt="property-2">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-2">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title" id="card-title-2">Apartment in Mumbai Suburbs</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
                                     </div>
-                                    <!-- Content Column -->
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
-                                            </div>
+                                    <p class="card-text" id="card-text-2">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...</p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
                                         </div>
                                     </div>
                                 </div>
@@ -410,88 +242,75 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-md-4">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
-                                    </div>
-                                    <!-- Content Column -->
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-md-4">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
-                                    </div>
-                                    <!-- Content Column -->
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Trending section one right side section -->
+                <div class="col-lg-4 col-12 p-3 custom-scrollbar"
+                    style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
+
+                    <div id="trendingNewsOneContainer"></div>
                 </div>
             </div>
-            <a class="btn rounded-circle position-absolute carousel-button" style="top: 40%; left:-2%;"
-                href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <i class="fa-solid fa-arrow-left text-white fa-2x"></i>
-            </a>
-            <a class="btn rounded-circle position-absolute carousel-button" style="top: 40%; right: -2%;"
-                href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <i class="fa-solid fa-arrow-right text-white fa-2x"></i>
-            </a>
-        </div>
+        </section>
 
-        <!-- Mobile Carousel -->
-        <div id="carouselMobile" class="carousel slide d-block d-md-none">
-            <div class="carousel-inner">
-                <!-- Mobile Carousel Item 1 -->
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-12">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
+        <!-- Trending section two -->
+        <section class="py-5">
+            <div class="row align-items-center">
+                <!-- left side section -->
+                <div class="col-lg-8 col-12" id="property-cards">
+                    <div class="row mt-5">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-img-3"
+                                    src="./assets/property/mumbai-3.jpg" alt="property-3">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-3">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title" id="card-title-3">Luxury Apartment in Mumbai</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
                                     </div>
-                                    <!-- Content Column -->
-                                    <div class="col-12">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
-                                            </div>
+                                    <p class="card-text" id="card-text-3">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...</p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-img-4"
+                                    src="./assets/property/mumbai-2.jpg" alt="property-4">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-4">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title" id="card-title-4">Apartment in Mumbai Suburbs</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mt-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text" id="card-text-4">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...</p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
                                         </div>
                                     </div>
                                 </div>
@@ -499,25 +318,140 @@
                         </div>
                     </div>
                 </div>
-                <!-- Mobile Carousel Item 2 -->
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-12">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
+
+                <!-- Trending section two right side section -->
+                <div class="col-lg-4 col-12 p-3 custom-scrollbar"
+                    style="overflow-y: auto; height: 470px; background-color:#F7F9FF">
+                    <!-- trending  news -->
+                    <div id="trendingNewsTwoContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="subscribe-section row py-5 border justify-content-center align-items-center text-center">
+                <!-- First Column: Image on the left -->
+                <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                    <img src="./assets/icons/3dicons.png" alt="3D Icon" class="img-fluid">
+                </div>
+
+                <!-- Second Column: Text and Input Field -->
+                <div class="col-12 col-md-6">
+                    <div class="text-center text-md-start">
+                        <div class="fs-1 text-dark">Unlock property market secrets</div>
+                        <div class="text-dark fs-5">Get insider insights on trends, sustainability, and strategies</div>
+                    </div>
+                    <form
+                        class="d-md-flex d-block align-items-center justify-content-center justify-content-md-start mt-4">
+                        <div class="form-group mb-md-0 mb-3 w-75 mx-md-0 mx-auto">
+                            <input type="email" class="form-control py-2" placeholder="Enter email ID" />
+                        </div>
+                        <button type="submit" class="subscribe-btn py-1 px-3 rounded ms-md-3 ms-0">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Third Column: Image on the right -->
+                <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mt-4 mt-md-0">
+                    <img src="./assets/pattern.png" alt="Pattern" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured blog section -->
+        <section class="py-5">
+            <div class="text-center fs-1 fw-bold mb-5">Featured Blogs</div>
+            <div id="carouselExampleIndicators" class="carousel slide position-relative d-none d-md-block">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-md-4">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- Content Column -->
-                                    <div class="col-12">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-md-4">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-md-4">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-md-4">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -526,25 +460,93 @@
                         </div>
                     </div>
                 </div>
-                <!-- Mobile Carousel Item 3 -->
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="row">
-                                    <!-- Image Column -->
-                                    <div class="col-12">
-                                        <img src="./assets/property/property-7.png" alt="Card-image"
-                                            class="h-100 w-100">
+                <button class="btn rounded-circle position-absolute carousel-button" style="top: 40%; left:-1%;"
+                    href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <i class="fa-solid fa-arrow-left text-white fa-lg"></i>
+                </button>
+                <button class="btn rounded-circle position-absolute carousel-button" style="top: 40%; right: -1%;"
+                    href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <i class="fa-solid fa-arrow-right text-white fa-lg"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Carousel -->
+            <div id="carouselMobile" class="carousel slide d-block d-md-none">
+                <div class="carousel-inner">
+                    <!-- Mobile Carousel Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-12">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-12">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- Content Column -->
-                                    <div class="col-12">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
-                                                fuerzas a favor de las organizaciones</h4>
-                                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                                <p class="mb-0 fs-5">March 6, 2024</p>
-                                                <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Carousel Item 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-12">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-12">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Carousel Item 3 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-0 shadow">
+                                    <div class="row">
+                                        <!-- Image Column -->
+                                        <div class="col-12">
+                                            <img src="./assets/property/property-7.png" alt="Card-image"
+                                                class="h-100 w-100">
+                                        </div>
+                                        <!-- Content Column -->
+                                        <div class="col-12">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                    fuerzas a favor de las organizaciones</h4>
+                                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                                    <p class="mb-0 fs-5">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -553,246 +555,48 @@
                         </div>
                     </div>
                 </div>
+                <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; left:-3%;"
+                    href="#carouselMobile" role="button" data-bs-slide="prev">
+                    <i class="fa-solid fa-arrow-left text-white fa-2x"></i>
+                </a>
+                <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; right: -2%;"
+                    href="#carouselMobile" role="button" data-bs-slide="next">
+                    <i class="fa-solid fa-arrow-right text-white fa-2x"></i>
+                </a>
             </div>
-            <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; left:-3%;"
-                href="#carouselMobile" role="button" data-bs-slide="prev">
-                <i class="fa-solid fa-arrow-left text-white fa-2x"></i>
-            </a>
-            <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; right: -2%;"
-                href="#carouselMobile" role="button" data-bs-slide="next">
-                <i class="fa-solid fa-arrow-right text-white fa-2x"></i>
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!-- bottom card section -->
-    <section class="container py-5">
-        <div class="row mt-5">
-            <!-- Button Container -->
-            <div class="d-flex flex-wrap align-items-center mb-2">
-                <ul class="nav nav-pills border-0 d-flex flex-wrap mx-auto mx-md-0 mb-2" id="pills-tab" role="tablist">
-                    <li class="nav-item mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark active border-0 w-100 text-nowrap fs-6"
-                            id="pills-Expertise-tab" data-bs-toggle="pill" data-bs-target="#pills-Expertise"
-                            type="button" role="tab" aria-controls="pills-Expertise"
-                            aria-selected="true">Expertise</button>
-                    </li>
-                    <li class="nav-item mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border-0 w-100 text-nowrap fs-6" id="pills-Category-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Category" type="button" role="tab"
-                            aria-controls="pills-Category" aria-selected="false">Category</button>
-                    </li>
-                    <li class="nav-item mb-2 pe-2" role="presentation">
-                        <button class="nav-link text-dark border-0 w-100 text-nowrap fs-6" id="pills-Type-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-Type" type="button" role="tab"
-                            aria-controls="pills-Type" aria-selected="false">Type</button>
-                    </li>
-                </ul>
-                <div class="col-md-1 ms-auto col-12">
-                    <button class="fs-6 w-100 sort-btn">Sort</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <!-- Property 5 -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card mb-5">
-                    <img class="card-img-top position-relative" src="./assets/property/property-3.jpg" alt="property-1">
-                    <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                    <div class="card-body">
-                        <!-- Title and Share Button Row -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Share">
-                                <img src="./assets/icons/share-icon.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="card-text">
-                            Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                            ISKCON temple 200m.
-                            More about this property...
-                        </p>
-                    </div>
-                    <div class="card-footer border-0 bg-transparent">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mb-0">March 6, 2024</div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                    More</button>
-                            </div>
-                        </div>
+        <!-- bottom card section -->
+        <section class="py-5">
+            <div class="row mt-5">
+                <!-- Button Container -->
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <ul class="nav nav-pills border-0 d-flex flex-wrap mx-auto mx-md-0 mb-2" id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark active border-0 w-100 text-nowrap fs-6"
+                                id="pills-Expertise-tab" data-bs-toggle="pill" data-bs-target="#pills-Expertise"
+                                type="button" role="tab" aria-controls="pills-Expertise"
+                                aria-selected="true">Expertise</button>
+                        </li>
+                        <li class="nav-item mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark border-0 w-100 text-nowrap fs-6" id="pills-Category-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Category" type="button" role="tab"
+                                aria-controls="pills-Category" aria-selected="false">Category</button>
+                        </li>
+                        <li class="nav-item mb-2 pe-2" role="presentation">
+                            <button class="nav-link text-dark border-0 w-100 text-nowrap fs-6" id="pills-Type-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-Type" type="button" role="tab"
+                                aria-controls="pills-Type" aria-selected="false">Type</button>
+                        </li>
+                    </ul>
+                    <div class="col-md-1 ms-auto col-12">
+                        <button class="fs-6 w-100 sort-btn">Sort</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Property 6 -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card mb-5">
-                    <img class="card-img-top position-relative" src="./assets/property/property-5.jpg" alt="property-1">
-                    <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                    <div class="card-body">
-                        <!-- Title and Share Button Row -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Share">
-                                <img src="./assets/icons/share-icon.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="card-text">
-                            Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                            ISKCON temple 200m.
-                            More about this property...
-                        </p>
-                    </div>
-                    <div class="card-footer border-0 bg-transparent">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mb-0">March 6, 2024</div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Property 7 -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card mb-5">
-                    <img class="card-img-top position-relative" src="./assets/property/property-4.jpg" alt="property-1">
-                    <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                    <div class="card-body">
-                        <!-- Title and Share Button Row -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Share">
-                                <img src="./assets/icons/share-icon.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="card-text">
-                            Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                            ISKCON temple 200m.
-                            More about this property...
-                        </p>
-                    </div>
-                    <div class="card-footer border-0 bg-transparent">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mb-0">March 6, 2024</div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <!-- Property 8 -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card mb-5">
-                    <img class="card-img-top position-relative" src="./assets/property/property-5.jpg" alt="property-1">
-                    <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                    <div class="card-body">
-                        <!-- Title and Share Button Row -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Share">
-                                <img src="./assets/icons/share-icon.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="card-text">
-                            Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                            ISKCON temple 200m.
-                            More about this property...
-                        </p>
-                    </div>
-                    <div class="card-footer border-0 bg-transparent">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mb-0">March 6, 2024</div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Property 9 -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card mb-5">
-                    <img class="card-img-top position-relative" src="./assets/property/property-2.jpg" alt="property-1">
-                    <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                    <div class="card-body">
-                        <!-- Title and Share Button Row -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Share">
-                                <img src="./assets/icons/share-icon.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="card-text">
-                            Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                            ISKCON temple 200m.
-                            More about this property...
-                        </p>
-                    </div>
-                    <div class="card-footer border-0 bg-transparent">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mb-0">March 6, 2024</div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Property 10 -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card mb-5">
-                    <img class="card-img-top position-relative" src="./assets/property/property-1.jpg" alt="property-1">
-                    <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                    <div class="card-body">
-                        <!-- Title and Share Button Row -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Villa With Panoramic View</h5>
-                            <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Share">
-                                <img src="./assets/icons/share-icon.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="card-text">
-                            Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                            ISKCON temple 200m.
-                            More about this property...
-                        </p>
-                    </div>
-                    <div class="card-footer border-0 bg-transparent">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="mb-0">March 6, 2024</div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="collapse card-container" id="cardContainer">
-            <div class="row justify-content-center">
+            <div class="row mt-5">
                 <!-- Property 5 -->
                 <div class="col-lg-4 col-md-12">
                     <div class="card mb-5">
@@ -809,8 +613,8 @@
                                 </button>
                             </div>
                             <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is ISKCON
-                                temple 200m.
+                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                ISKCON temple 200m.
                                 More about this property...
                             </p>
                         </div>
@@ -841,10 +645,9 @@
                                     <img src="./assets/icons/share-icon.svg" alt="">
                                 </button>
                             </div>
-
                             <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is ISKCON
-                                temple 200m.
+                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                ISKCON temple 200m.
                                 More about this property...
                             </p>
                         </div>
@@ -870,14 +673,14 @@
                             <!-- Title and Share Button Row -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent -0 mb-2" data-bs-toggle="tooltip"
+                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Share">
                                     <img src="./assets/icons/share-icon.svg" alt="">
                                 </button>
                             </div>
                             <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is ISKCON
-                                temple 200m.
+                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                ISKCON temple 200m.
                                 More about this property...
                             </p>
                         </div>
@@ -893,17 +696,226 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="text-center mt-5">
-            <button type="button" class="view-more-btn rounded px-4 py-2 toggle-collapse" id="viewMoreBtn">
-                View More
-                <span id="arrowIcon">
-                    <i class="fa-solid fa-arrow-down ms-2"></i>
-                </span>
-            </button>
-        </div>
-    </section>
+            <div class="row justify-content-center">
+                <!-- Property 8 -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card mb-5">
+                        <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
+                            alt="property-1">
+                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                        <div class="card-body">
+                            <!-- Title and Share Button Row -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Villa With Panoramic View</h5>
+                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Share">
+                                    <img src="./assets/icons/share-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <p class="card-text">
+                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                ISKCON temple 200m.
+                                More about this property...
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mb-0">March 6, 2024</div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 9 -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card mb-5">
+                        <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
+                            alt="property-1">
+                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                        <div class="card-body">
+                            <!-- Title and Share Button Row -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Villa With Panoramic View</h5>
+                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Share">
+                                    <img src="./assets/icons/share-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <p class="card-text">
+                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                ISKCON temple 200m.
+                                More about this property...
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mb-0">March 6, 2024</div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 10 -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card mb-5">
+                        <img class="card-img-top position-relative" src="./assets/property/property-1.jpg"
+                            alt="property-1">
+                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                        <div class="card-body">
+                            <!-- Title and Share Button Row -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Villa With Panoramic View</h5>
+                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Share">
+                                    <img src="./assets/icons/share-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <p class="card-text">
+                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                ISKCON temple 200m.
+                                More about this property...
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mb-0">March 6, 2024</div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="collapse card-container" id="cardContainer">
+                <div class="row justify-content-center">
+                    <!-- Property 5 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mb-5">
+                            <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
+                                alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <div class="card-body">
+                                <!-- Title and Share Button Row -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <p class="card-text">
+                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                    ISKCON
+                                    temple 200m.
+                                    More about this property...
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mb-0">March 6, 2024</div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 6 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mb-5">
+                            <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
+                                alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <div class="card-body">
+                                <!-- Title and Share Button Row -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
+                                    </button>
+                                </div>
+
+                                <p class="card-text">
+                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                    ISKCON
+                                    temple 200m.
+                                    More about this property...
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mb-0">March 6, 2024</div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 7 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mb-5">
+                            <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
+                                alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <div class="card-body">
+                                <!-- Title and Share Button Row -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent -0 mb-2" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <p class="card-text">
+                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                    ISKCON
+                                    temple 200m.
+                                    More about this property...
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mb-0">March 6, 2024</div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button type="button" class="view-more-btn rounded px-4 py-2 toggle-collapse" id="viewMoreBtn">
+                    View More
+                    <span id="arrowIcon">
+                        <i class="fa-solid fa-arrow-down ms-2"></i>
+                    </span>
+                </button>
+            </div>
+        </section>
+    </main>
 
     <!-- footer section -->
     <footer class="px-md-5 px-3 px-lg-5">
@@ -1005,7 +1017,7 @@
                                     <li class="pb-2">
                                         <div class="btn p-0">
                                             <button
-                                                class="btn btn-light rounded-pill mb-3 px-4 d-flex align-items-center text-nowrap">Refer
+                                                class="btn btn-light rounded-pill mb-3 py-1 px-4 d-flex align-items-center text-nowrap">Refer
                                                 &amp; Earn
                                                 <span class="ms-1 mb-1">
                                                     <img src="./assets/animation/fire-animation.gif" alt=""
@@ -1025,15 +1037,15 @@
                             <div class="col-12 col-lg-12 pt-2 pt-lg-0">
                                 <div class="row align-items-center mt-3">
                                     <div class="col-lg-4 col-md-4 col-12 text-start">
-                                        <button class="btn rounded-pill btn-light party-btn d-flex align-items-center">
+                                        <button class="btn rounded-pill btn-light d-flex align-items-center pb-1 py-1">
                                             <span class="ms-2">We are hiring</span>
                                             <span>
-                                                <canvas id="riveCanvas" width="40px" height="25vh"></canvas>
+                                                <canvas id="riveCanvas"></canvas>
                                             </span>
                                         </button>
                                     </div>
                                     <div
-                                        class="col-lg-8 col-md-8 col-12 d-flex justify-content-lg-end justify-content-center gap-2 pt-md-0 pt-sm-5">
+                                        class="col-lg-8 col-md-8 col-12 d-flex justify-content-lg-end justify-content-center gap-2 pt-md-0 pt-lg-0 pt-5">
                                         <button
                                             class="btn appstore-btn d-flex align-items-center justify-content-center gap-2">
                                             <svg class="appstore-icon" fill="currentcolor"
@@ -1075,13 +1087,13 @@
                 </div>
                 <div class="row text-center mx-auto align-items-center justify-content-center pt-5 pb-3">
                     <a href="/"
-                        class="text-decoration-none col-12 col-md-1 d-flex justify-content-center footer-secondary-link">Privacy
+                        class="text-decoration-none col-12 col-md-1 d-flex justify-content-center footer-secondary-link text-nowrap">Privacy
                         policies</a>
                     <a href="/"
-                        class="text-decoration-none col-12 col-md-2 d-flex justify-content-center footer-secondary-link">Terms
+                        class="text-decoration-none col-12 col-md-2 d-flex justify-content-center footer-secondary-link text-nowrap">Terms
                         and conditions</a>
                     <a href="/"
-                        class="text-decoration-none col-12 col-md-1 d-flex justify-content-center footer-secondary-link">Disclaimer</a>
+                        class="text-decoration-none col-12 col-md-1 d-flex justify-content-center footer-secondary-link text-nowrap">Disclaimer</a>
                 </div>
                 <hr>
                 <div class="card-group d-flex gap-3 justify-content-between  flex-wrap pt-3 gap-md-0">
