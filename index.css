@@ -1,7 +1,11 @@
-body {
+* {
     font-family: 'Familjen Grotesk', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+  
 #checkbox {
     display: none;
 }
@@ -45,7 +49,7 @@ body {
     gap: 6px;
     transition-duration: .3s;
     right: 25px;
-    top: 8px;
+    top: 25px;
     z-index: 1000;
 }
 
@@ -108,6 +112,10 @@ body {
     transition-duration: .3s;
     transform-origin: right;
     display: none;
+}
+
+.secondary-navbar {
+    background-color: #F7F9FF;
 }
 
 .header-link {
@@ -217,6 +225,12 @@ body {
 
 .trending {
     background-color: linear-gradient(to bottom, #FFFFFF 0%, #E5E8FF 100%);
+}
+
+.trending-section-right-section {
+    background-color: #F7F9FF;
+    overflow-y: auto;
+    height: 470px;
 }
 
 .carousel-button {
@@ -465,6 +479,14 @@ nav {
     .nav-tabs .nav-link.active {
         width: 110%;
     }
+
+    .rightside #newsCards {
+        height: 100%;
+    }
+
+    .trending-section-right-section {
+        height: 4100%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -484,5 +506,9 @@ nav {
 
     .nav-tabs .nav-link.active {
         width: 110%;
+    }
+
+    .trending-section-right-section {
+        height: 4100%;
     }
 }
