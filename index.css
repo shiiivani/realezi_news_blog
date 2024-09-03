@@ -10,6 +10,18 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.fs-13 {
+    font-size: 13px;
+}
+
+.primary-text-color {
+    color: #111F3C;
+}
+
+.secondary-text-color {
+    color: #616161;
+}
+
 /* Hero Section Styles */
 .herosection {
     height: 100%;
@@ -33,6 +45,7 @@ body::-webkit-scrollbar {
     object-fit: cover;
 }
 
+/* navbar styles */
 #checkbox {
     display: none;
 }
@@ -510,5 +523,42 @@ nav {
 
     .trending-section-right-section {
         height: 4100%;
+    }
+}
+
+/* Mobile view slider styles */
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide img {
+    object-fit: cover;
+    height: auto;
+}
+
+/* For screens smaller than 420px */
+@media only screen and (max-width: 420px) {
+    .slider {
+        padding: 0;
+    }
+
+    .slide {
+        margin-right: 5%;
+    }
+
+    .slide img {
+        margin: 0;
     }
 }

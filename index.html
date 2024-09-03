@@ -99,10 +99,10 @@
         </div>
     </section>
 
-    <main class="container">
+    <main class="container bg-white">
         <!-- hero section -->
         <section class="py-5">
-            <div class="fs-1 fw-bold text-center">Hot News</div>
+            <div class="fs-1 fw-bold text-center primary-text-color">Hot News</div>
             <div class="row mt-5">
                 <!-- Left Side (Image with Text) -->
                 <div class="col-lg-6 col-md-12 col-12 herosection mb-5">
@@ -120,8 +120,12 @@
 
                 <!-- Right Side (Scrollable Content) -->
                 <div class="col-lg-6 col-md-12 col-12 rightside">
-                    <div id="newsCards" class="overflow-y-auto overflow-x-hidden custom-scrollbar">
-                        <!-- Add more scrollable content here -->
+                    <div id="newsCards" class="overflow-y-auto overflow-x-hidden custom-scrollbar d-none d-md-block">
+                        <!-- This section will be hidden on mobile view -->
+                    </div>
+
+                    <!-- Carousel for mobile view -->
+                    <div id="slider-container" class="slider d-lg-none">
                     </div>
                 </div>
             </div>
@@ -129,43 +133,43 @@
 
         <!-- Trending section one -->
         <section class="py-5">
-            <div class="text-center fs-1 fw-bold">What’s Trending</div>
+            <div class="text-center fs-1 fw-bold primary-text-color">What’s Trending</div>
             <!-- Button Container -->
             <div class="row mt-5">
                 <div class="d-flex flex-wrap align-items-center mb-2">
                     <ul class="nav nav-pills border-0 d-flex flex-wrap me-auto" id="pills-tab" role="tablist">
                         <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark active border-0 fs-6 w-100 text-nowrap"
+                            <button class="nav-link text-dark active border-0 fs-6 w-100 text-nowrap primary-text-color"
                                 id="pills-Mumbai-tab" data-bs-toggle="pill" data-bs-target="#pills-Mumbai" type="button"
                                 role="tab" aria-controls="pills-Mumbai" aria-selected="true"
                                 onclick="changeCity('Mumbai')">Mumbai</button>
                         </li>
                         <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Delhi-tab"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Delhi-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button" role="tab"
                                 aria-controls="pills-Delhi" aria-selected="false"
                                 onclick="changeCity('Delhi')">Delhi</button>
                         </li>
                         <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Baroda-tab"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Baroda-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button" role="tab"
                                 aria-controls="pills-Baroda" aria-selected="false"
                                 onclick="changeCity('Baroda')">Baroda</button>
                         </li>
                         <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Pune-tab"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Pune-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button" role="tab"
                                 aria-controls="pills-Pune" aria-selected="false"
                                 onclick="changeCity('Pune')">Pune</button>
                         </li>
                         <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap" id="pills-Chennai-tab"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Chennai-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-Chennai" type="button" role="tab"
                                 aria-controls="pills-Chennai" aria-selected="false"
                                 onclick="changeCity('Chennai')">Chennai</button>
                         </li>
                         <li class="nav-item col-6 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 text-nowrap" id="pills-Bengaluru-tab"
+                            <button class="nav-link text-dark fs-6 text-nowrap primary-text-color" id="pills-Bengaluru-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-Bengaluru" type="button" role="tab"
                                 aria-controls="pills-Bengaluru" aria-selected="false"
                                 onclick="changeCity('Bengaluru')">Bengaluru</button>
@@ -179,7 +183,7 @@
 
             <div class="row align-items-center">
                 <!-- let side section -->
-                <div class="col-lg-8 col-12" id="property-cards">
+                <div class="col-lg-8 col-12 d-none d-lg-block" id="property-cards">
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-12 col-12">
                             <div class="card mb-5">
@@ -189,22 +193,23 @@
                                     id="card-badge-1">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title" id="card-title-1">Villa in Mumbai with Sea View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with Sea
+                                            View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text" id="card-text-1">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...
                                     </p>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -220,21 +225,91 @@
                                     id="card-badge-2">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title" id="card-title-2">Apartment in Mumbai Suburbs</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-2">Apartment in Mumbai Suburbs
+                                        </h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text" id="card-text-2">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-2">Very nice property in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...</p>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-3 mt-5 d-lg-none">
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-mobile-img-1"
+                                    src="./assets/property/mumbai-1.jpg" alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-1">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fs-6 fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with
+                                            Sea View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 fs-13 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-semibold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-mobile-img-2"
+                                    src="./assets/property/mumbai-1.jpg" alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-1">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fs-6 fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with
+                                            Sea View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 fs-13 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-semibold">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -246,7 +321,9 @@
 
                 <!-- Trending section one right side section -->
                 <div class="col-lg-4 col-12 p-3 custom-scrollbar trending-section-right-section">
-                    <div id="trendingNewsOneContainer"></div>
+                    <div id="trendingNewsOneContainer" class="d-none d-md-block"></div>
+                    <!-- Make sure this container is visible on mobile -->
+                    <div id="trendingNewsOneContainerMobile" class="slider d-lg-none"></div>
                 </div>
             </div>
         </section>
@@ -255,7 +332,7 @@
         <section class="pb-5">
             <div class="row align-items-center">
                 <!-- left side section -->
-                <div class="col-lg-8 col-12" id="property-cards">
+                <div class="col-lg-8 col-12 d-none d-lg-block" id="property-cards">
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-12 col-12">
                             <div class="card mb-5">
@@ -265,21 +342,21 @@
                                     id="card-badge-3">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title" id="card-title-3">Luxury Apartment in Mumbai</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-3">Luxury Apartment in Mumbai</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text" id="card-text-3">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-3">Very nice property in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...</p>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -295,21 +372,90 @@
                                     id="card-badge-4">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title" id="card-title-4">Apartment in Mumbai Suburbs</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-4">Apartment in Mumbai Suburbs</h5>
                                         <button type="button" class="btn btn-transparent border-0 mt-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text" id="card-text-4">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-4">Very nice property in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...</p>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="mb-0">March 6, 2024</div>
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 d-lg-none px-3">
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-mobile-img-3"
+                                    src="./assets/property/mumbai-1.jpg" alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-1">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fs-6 fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with
+                                            Sea View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 fs-13 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-semibold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" id="card-mobile-img-4"
+                                    src="./assets/property/mumbai-1.jpg" alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="card-badge-1">Heritage</span>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title primary-text-color fs-6 fw-semibold" id="card-title-1">Villa in Mumbai with
+                                            Sea View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                        Rithala metro station within 1km and is ISKCON temple 200m. More about this
+                                        property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 fs-13 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-semibold">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -321,8 +467,9 @@
 
                 <!-- Trending section two right side section -->
                 <div class="col-lg-4 col-12 p-3 custom-scrollbar trending-section-right-section">
-                    <!-- trending  news -->
-                    <div id="trendingNewsTwoContainer"></div>
+                    <div id="trendingNewsTwoContainer" class="d-none d-md-block"></div>
+                    <!-- Make sure this container is visible on mobile -->
+                    <div id="trendingNewsTwoContainerMobile" class="slider d-lg-none"></div>
                 </div>
             </div>
         </section>
@@ -374,11 +521,11 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -396,11 +543,11 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -423,11 +570,11 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -445,11 +592,11 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -486,11 +633,11 @@
                                         <!-- Content Column -->
                                         <div class="col-12">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title- fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -513,11 +660,11 @@
                                         <!-- Content Column -->
                                         <div class="col-12">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -540,11 +687,11 @@
                                         <!-- Content Column -->
                                         <div class="col-12">
                                             <div class="card-body">
-                                                <h4 class="card-title">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-bold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -595,211 +742,8 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <!-- Property 5 -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-5">
-                        <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
-                            alt="property-1">
-                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                        <div class="card-body">
-                            <!-- Title and Share Button Row -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Share">
-                                    <img src="./assets/icons/share-icon.svg" alt="">
-                                </button>
-                            </div>
-                            <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                ISKCON temple 200m.
-                                More about this property...
-                            </p>
-                        </div>
-                        <div class="card-footer border-0 bg-transparent">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mb-0">March 6, 2024</div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                        More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Property 6 -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-5">
-                        <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
-                            alt="property-1">
-                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                        <div class="card-body">
-                            <!-- Title and Share Button Row -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Share">
-                                    <img src="./assets/icons/share-icon.svg" alt="">
-                                </button>
-                            </div>
-                            <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                ISKCON temple 200m.
-                                More about this property...
-                            </p>
-                        </div>
-                        <div class="card-footer border-0 bg-transparent">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mb-0">March 6, 2024</div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                        More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Property 7 -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-5">
-                        <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
-                            alt="property-1">
-                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                        <div class="card-body">
-                            <!-- Title and Share Button Row -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Share">
-                                    <img src="./assets/icons/share-icon.svg" alt="">
-                                </button>
-                            </div>
-                            <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                ISKCON temple 200m.
-                                More about this property...
-                            </p>
-                        </div>
-                        <div class="card-footer border-0 bg-transparent">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mb-0">March 6, 2024</div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                        More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <!-- Property 8 -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-5">
-                        <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
-                            alt="property-1">
-                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                        <div class="card-body">
-                            <!-- Title and Share Button Row -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Share">
-                                    <img src="./assets/icons/share-icon.svg" alt="">
-                                </button>
-                            </div>
-                            <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                ISKCON temple 200m.
-                                More about this property...
-                            </p>
-                        </div>
-                        <div class="card-footer border-0 bg-transparent">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mb-0">March 6, 2024</div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                        More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Property 9 -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-5">
-                        <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
-                            alt="property-1">
-                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                        <div class="card-body">
-                            <!-- Title and Share Button Row -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Share">
-                                    <img src="./assets/icons/share-icon.svg" alt="">
-                                </button>
-                            </div>
-                            <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                ISKCON temple 200m.
-                                More about this property...
-                            </p>
-                        </div>
-                        <div class="card-footer border-0 bg-transparent">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mb-0">March 6, 2024</div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                        More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Property 10 -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-5">
-                        <img class="card-img-top position-relative" src="./assets/property/property-1.jpg"
-                            alt="property-1">
-                        <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
-                        <div class="card-body">
-                            <!-- Title and Share Button Row -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Villa With Panoramic View</h5>
-                                <button type="button" class="btn btn-transparent border-0 mb-2" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Share">
-                                    <img src="./assets/icons/share-icon.svg" alt="">
-                                </button>
-                            </div>
-                            <p class="card-text">
-                                Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                ISKCON temple 200m.
-                                More about this property...
-                            </p>
-                        </div>
-                        <div class="card-footer border-0 bg-transparent">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mb-0">March 6, 2024</div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
-                                        More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="collapse card-container" id="cardContainer">
-                <div class="row justify-content-center">
+            <div class="d-none d-md-block">
+                <div class="row mt-5">
                     <!-- Property 5 -->
                     <div class="col-lg-4 col-md-12">
                         <div class="card mb-5">
@@ -809,24 +753,23 @@
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
                                     <button type="button" class="btn btn-transparent border-0 mb-2"
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                         <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-                                <p class="card-text">
+                                <p class="card-text secondary-text-color">
                                     Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON
-                                    temple 200m.
+                                    ISKCON temple 200m.
                                     More about this property...
                                 </p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
+                                    <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                     <div class="d-flex">
-                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-semibold">Read
                                             More</button>
                                     </div>
                                 </div>
@@ -843,23 +786,21 @@
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
+                                    <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
                                     <button type="button" class="btn btn-transparent border-0 mb-2"
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                         <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-
-                                <p class="card-text">
+                                <p class="card-text secondary-text-color">
                                     Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON
-                                    temple 200m.
+                                    ISKCON temple 200m.
                                     More about this property...
                                 </p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
+                                    <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                     <div class="d-flex">
                                         <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
                                             More</button>
@@ -878,22 +819,21 @@
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title">Villa With Panoramic View</h5>
-                                    <button type="button" class="btn btn-transparent -0 mb-2" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Share">
+                                    <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                         <img src="./assets/icons/share-icon.svg" alt="">
                                     </button>
                                 </div>
-                                <p class="card-text">
+                                <p class="card-text secondary-text-color">
                                     Very nice property in sec24 Rohini near Rithala metro station within 1km and is
-                                    ISKCON
-                                    temple 200m.
+                                    ISKCON temple 200m.
                                     More about this property...
                                 </p>
                             </div>
                             <div class="card-footer border-0 bg-transparent">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mb-0">March 6, 2024</div>
+                                    <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                     <div class="d-flex">
                                         <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
                                             More</button>
@@ -903,15 +843,397 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row justify-content-center">
+                    <!-- Property 8 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mb-5">
+                            <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
+                                alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <div class="card-body">
+                                <!-- Title and Share Button Row -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <p class="card-text secondary-text-color">
+                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                    ISKCON temple 200m.
+                                    More about this property...
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mb-0 secondary-text-color">March 6, 2024</div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 9 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mb-5">
+                            <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
+                                alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <div class="card-body">
+                                <!-- Title and Share Button Row -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <p class="card-text secondary-text-color">
+                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                    ISKCON temple 200m.
+                                    More about this property...
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mb-0 secondary-text-color">March 6, 2024</div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 10 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card mb-5">
+                            <img class="card-img-top position-relative" src="./assets/property/property-1.jpg"
+                                alt="property-1">
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <div class="card-body">
+                                <!-- Title and Share Button Row -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                    <button type="button" class="btn btn-transparent border-0 mb-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                        <img src="./assets/icons/share-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <p class="card-text secondary-text-color">
+                                    Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                    ISKCON temple 200m.
+                                    More about this property...
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mb-0 secondary-text-color">March 6, 2024</div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse card-container" id="cardContainer">
+                    <div class="row justify-content-center">
+                        <!-- Property 5 -->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON
+                                        temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Property 6 -->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <p class="card-text secondary-text-color">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON
+                                        temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Property 7 -->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent -0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON
+                                        temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button type="button" class="view-more-btn rounded px-4 py-2 toggle-collapse" id="viewMoreBtn">
+                        View More
+                        <span id="arrowIcon">
+                            <i class="fa-solid fa-arrow-down ms-2"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
 
-            <div class="text-center mt-5">
-                <button type="button" class="view-more-btn rounded px-4 py-2 toggle-collapse" id="viewMoreBtn">
-                    View More
-                    <span id="arrowIcon">
-                        <i class="fa-solid fa-arrow-down ms-2"></i>
-                    </span>
-                </button>
+            <div class="d-lg-none mt-5">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color fs-13">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color fs-13">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color fs-13">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color fs-12">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color fs-13">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mb-5">
+                                <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
+                                    alt="property-1">
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <div class="card-body">
+                                    <!-- Title and Share Button Row -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <button type="button" class="btn btn-transparent border-0 mb-2"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
+                                            <img src="./assets/icons/share-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <p class="card-text secondary-text-color fs-13">
+                                        Very nice property in sec24 Rohini near Rithala metro station within 1km and is
+                                        ISKCON temple 200m.
+                                        More about this property...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

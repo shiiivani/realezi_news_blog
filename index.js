@@ -143,18 +143,22 @@ function changeCity(city) {
   const data = cityData[city];
 
   document.getElementById("card-img-1").src = data.img1;
+  document.getElementById("card-mobile-img-1").src = data.img1;
   document.getElementById("card-title-1").innerText = data.title1;
   document.getElementById("card-text-1").innerText = data.desc1;
 
   document.getElementById("card-img-2").src = data.img2;
+  document.getElementById("card-mobile-img-2").src = data.img2;
   document.getElementById("card-title-2").innerText = data.title2;
   document.getElementById("card-text-2").innerText = data.desc2;
 
   document.getElementById("card-img-3").src = data.img3;
+  document.getElementById("card-mobile-img-3").src = data.img3;
   document.getElementById("card-title-3").innerText = data.title3;
   document.getElementById("card-text-3").innerText = data.desc3;
 
   document.getElementById("card-img-4").src = data.img4;
+  document.getElementById("card-mobile-img-4").src = data.img4;
   document.getElementById("card-title-4").innerText = data.title4;
   document.getElementById("card-text-4").innerText = data.desc4;
 }
@@ -362,13 +366,13 @@ const contentData = {
       "Explore cutting-edge designs.  Sustainable architecture for the future.  Innovative spaces that inspire.",
     newsItems: [
       {
-        title: "Architecture News 1",
+        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
       },
       {
-        title: "Architecture News 2",
+        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
@@ -445,13 +449,13 @@ const contentData = {
       "Understand the real estate market.  Trends that are shaping property investments.  Expert advice for buyers and sellers.",
     newsItems: [
       {
-        title: "Real Estate News 1",
+        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
       },
       {
-        title: "Real Estate News 2",
+        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
@@ -529,13 +533,13 @@ const contentData = {
       "Adapt and thrive in today's business landscape.  Innovative strategies for growth.  Insights from industry leaders.",
     newsItems: [
       {
-        title: "Business News 1",
+        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
       },
       {
-        title: "Business News 2",
+        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
@@ -614,16 +618,9 @@ function changeContent(tabName) {
   document.getElementById("heroTitle").innerText = data.heroTitle;
   document.getElementById("heroSubtitle").innerText = data.heroSubtitle;
   document.getElementById("heroImage").src = data.heroImage;
-  const trendingNewsOneContainer = document.getElementById(
-    "trendingNewsOneContainer"
-  );
-  const trendingNewsTwoContainer = document.getElementById(
-    "trendingNewsTwoContainer"
-  );
 
   // Update News Cards Section
   const newsCards = document.getElementById("newsCards");
-
   newsCards.innerHTML = "";
   data.newsItems.forEach((news) => {
     newsCards.innerHTML += `
@@ -634,45 +631,127 @@ function changeContent(tabName) {
             </div>
             <div class="col-lg-7 col-12">
                 <div class="mt-3">
-                    <h6>${news.title}</h6>
-                    <p style="font-size: 13px;">${news.description}</p>
+                    <h6 class="primary-text-color fw-semibold">${news.title}</h6>
+                    <p class="secondary-text-color fs-13">${news.description}</p>
                 </div>
             </div>
         </div>
     `;
   });
 
+  // Update Carousel Section for mobile view
+  const sliderContainer = document.getElementById("slider-container");
+  sliderContainer.innerHTML = "";
+  data.newsItems.forEach((news) => {
+    // Function to truncate text to the first 20 words
+    const truncateText = (text) => {
+      const words = text.split(" ");
+      return words.length > 5 ? words.slice(0, 5).join(" ") + "..." : text;
+    };
+    
+    // Truncate the title and description
+    const truncatedTitle = truncateText(news.title);
+    const truncatedDescription = truncateText(news.description);
+    
+    sliderContainer.innerHTML += `
+    <div class="slide me-3">
+    <div class="card border-0 shadow p-1">
+      <div class="d-flex pb-0">
+        <div class="position-relative">
+          <span class="badge position-absolute top-1 start-1 mt-0 text-light" style="font-size: 10px">${tabName}</span>
+          <img src="${news.image}" alt="Card-image" class="img-fluid h-100 w-100">
+        </div>
+        <div class="ms-4">
+          <h6 class="primary-text-color fw-semibold" style="font-size: 14px;">${truncatedTitle}</h6>
+          <p class="fs-13 secondary-text-color mt-1">${truncatedDescription}</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+    `;
+  });  
+
+  // Update Trending News One Section
+  const trendingNewsOneContainer = document.getElementById(
+    "trendingNewsOneContainer"
+  );
   trendingNewsOneContainer.innerHTML = "";
   data.trendingNewsOne.forEach((news) => {
     trendingNewsOneContainer.innerHTML += `
-          <div class="row">
-            <div class="col-4">
-              <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
-            </div>
-            <div class="col-8">
-              <h6 class="card-title">${news.title}</h6>
-              <p class="mb-0 mt-2">${news.date}</p>
-            </div>
-            <hr class="mt-3">
+        <div class="row">
+          <div class="col-4">
+            <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
           </div>
-      `;
+          <div class="col-8">
+            <h6 class="card-title primary-text-color fw-semibold">${news.title}</h6>
+            <p class="mb-0 mt-3 secondary-text-color">${news.date}</p>
+          </div>
+          <hr class="mt-3">
+        </div>
+    `;
   });
 
+    // Update Trending News One Section for mobile
+    const trendingNewsOneContainerMobile = document.getElementById(
+      "trendingNewsOneContainerMobile"
+    );
+    trendingNewsOneContainerMobile.innerHTML = "";
+    data.trendingNewsOne.forEach((news) => {
+      trendingNewsOneContainerMobile.innerHTML += `
+      <div class="slide me-3">
+          <div class="d-flex">
+            <div>
+              <img src="${news.imageUrl}" alt="Card-image" class="">
+            </div>
+            <div class="ms-4">
+              <h6 class="card-title fw-bold" style="font-size: 14px;">${news.title}</h6>
+              <p class="mb-0 mt-2">${news.date}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+  // Update Trending News Two Section
+  const trendingNewsTwoContainer = document.getElementById(
+    "trendingNewsTwoContainer"
+  );
   trendingNewsTwoContainer.innerHTML = "";
   data.trendingNewsTwo.forEach((news) => {
     trendingNewsTwoContainer.innerHTML += `
-    <div class="row">
-    <div class="col-4">
-      <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
-    </div>
-    <div class="col-8">
-      <h6 class="card-title">${news.title}</h6>
-      <p class="mb-0 mt-2">${news.date}</p>
-    </div>
-    <hr class="mt-3">
-  </div>
-      `;
+        <div class="row">
+          <div class="col-4">
+            <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
+          </div>
+          <div class="col-8">
+          <h6 class="card-title primary-text-color fw-semibold">${news.title}</h6>
+          <p class="mb-0 mt-3 secondary-text-color">${news.date}</p>
+          </div>
+          <hr class="mt-3">
+        </div>
+    `;
   });
+
+    // Update Trending News Two Section
+    const trendingNewsTwoContainerMobile = document.getElementById(
+      "trendingNewsTwoContainerMobile"
+    );
+    trendingNewsTwoContainerMobile.innerHTML = "";
+    data.trendingNewsTwo.forEach((news) => {
+      trendingNewsTwoContainerMobile.innerHTML += `
+      <div class="slide me-3">
+          <div class="d-flex">
+            <div>
+              <img src="${news.imageUrl}" alt="Card-image" class="">
+            </div>
+            <div class="ms-4">
+              <h6 class="card-title fw-bold" style="font-size: 14px;">${news.title}</h6>
+              <p class="mb-0 mt-2">${news.date}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    });
 }
 
 // Initialize with Heritage content
