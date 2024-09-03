@@ -143,24 +143,36 @@ function changeCity(city) {
   const data = cityData[city];
 
   document.getElementById("card-img-1").src = data.img1;
-  document.getElementById("card-mobile-img-1").src = data.img1;
   document.getElementById("card-title-1").innerText = data.title1;
   document.getElementById("card-text-1").innerText = data.desc1;
 
+  document.getElementById("card-mobile-img-1").src = data.img1;
+  document.getElementById("card-mobile-title-1").innerText = data.title1;
+  document.getElementById("card-mobile-text-1").innerText = data.desc1;
+
   document.getElementById("card-img-2").src = data.img2;
-  document.getElementById("card-mobile-img-2").src = data.img2;
   document.getElementById("card-title-2").innerText = data.title2;
   document.getElementById("card-text-2").innerText = data.desc2;
 
+  document.getElementById("card-mobile-img-2").src = data.img2;
+  document.getElementById("card-mobile-title-2").innerText = data.title2;
+  document.getElementById("card-mobile-text-2").innerText = data.desc2;
+
   document.getElementById("card-img-3").src = data.img3;
-  document.getElementById("card-mobile-img-3").src = data.img3;
   document.getElementById("card-title-3").innerText = data.title3;
   document.getElementById("card-text-3").innerText = data.desc3;
 
+  document.getElementById("card-mobile-img-3").src = data.img3;
+  document.getElementById("card-mobile-title-3").innerText = data.title3;
+  document.getElementById("card-mobile-text-3").innerText = data.desc3;
+
   document.getElementById("card-img-4").src = data.img4;
-  document.getElementById("card-mobile-img-4").src = data.img4;
   document.getElementById("card-title-4").innerText = data.title4;
   document.getElementById("card-text-4").innerText = data.desc4;
+
+  document.getElementById("card-mobile-img-4").src = data.img4;
+  document.getElementById("card-mobile-title-4").innerText = data.title4;
+  document.getElementById("card-mobile-text-4").innerText = data.desc4;
 }
 
 // Set default city to Mumbai on page load
@@ -611,8 +623,15 @@ const contentData = {
   },
 };
 
+var currentTabName = '';
+
 function changeContent(tabName) {
+  currentTabName = tabName;
+
   const data = contentData[tabName];
+
+  // Update the tab name display
+  document.getElementById("currentTabName").innerText = tabName;
 
   // Update Hero Section
   document.getElementById("heroTitle").innerText = data.heroTitle;
@@ -643,38 +662,34 @@ function changeContent(tabName) {
   const sliderContainer = document.getElementById("slider-container");
   sliderContainer.innerHTML = "";
   data.newsItems.forEach((news) => {
-    // Function to truncate text to the first 20 words
     const truncateText = (text) => {
       const words = text.split(" ");
       return words.length > 5 ? words.slice(0, 5).join(" ") + "..." : text;
     };
     
-    // Truncate the title and description
     const truncatedTitle = truncateText(news.title);
     const truncatedDescription = truncateText(news.description);
     
     sliderContainer.innerHTML += `
     <div class="slide me-3">
-    <div class="card border-0 shadow p-1">
-      <div class="d-flex pb-0">
-        <div class="position-relative">
-          <span class="badge position-absolute top-1 start-1 mt-0 text-light" style="font-size: 10px">${tabName}</span>
-          <img src="${news.image}" alt="Card-image" class="img-fluid h-100 w-100">
-        </div>
-        <div class="ms-4">
-          <h6 class="primary-text-color fw-semibold" style="font-size: 14px;">${truncatedTitle}</h6>
-          <p class="fs-13 secondary-text-color mt-1">${truncatedDescription}</p>
+      <div class="card border-0 shadow p-1">
+        <div class="d-flex pb-0">
+          <div class="position-relative">
+            <span class="badge position-absolute top-1 start-1 mt-0 text-light" style="font-size: 10px">${tabName}</span>
+            <img src="${news.image}" alt="Card-image" class="img-fluid h-100 w-100">
+          </div>
+          <div class="ms-4">
+            <h6 class="primary-text-color fw-semibold" style="font-size: 14px;">${truncatedTitle}</h6>
+            <p class="fs-13 secondary-text-color mt-1">${truncatedDescription}</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>  
+    </div>  
     `;
   });  
 
   // Update Trending News One Section
-  const trendingNewsOneContainer = document.getElementById(
-    "trendingNewsOneContainer"
-  );
+  const trendingNewsOneContainer = document.getElementById("trendingNewsOneContainer");
   trendingNewsOneContainer.innerHTML = "";
   data.trendingNewsOne.forEach((news) => {
     trendingNewsOneContainer.innerHTML += `
@@ -691,31 +706,27 @@ function changeContent(tabName) {
     `;
   });
 
-    // Update Trending News One Section for mobile
-    const trendingNewsOneContainerMobile = document.getElementById(
-      "trendingNewsOneContainerMobile"
-    );
-    trendingNewsOneContainerMobile.innerHTML = "";
-    data.trendingNewsOne.forEach((news) => {
-      trendingNewsOneContainerMobile.innerHTML += `
-      <div class="slide me-3">
-          <div class="d-flex">
-            <div>
-              <img src="${news.imageUrl}" alt="Card-image" class="">
-            </div>
-            <div class="ms-4">
-              <h6 class="card-title fw-bold" style="font-size: 14px;">${news.title}</h6>
-              <p class="mb-0 mt-2">${news.date}</p>
-            </div>
+  // Update Trending News One Section for mobile
+  const trendingNewsOneContainerMobile = document.getElementById("trendingNewsOneContainerMobile");
+  trendingNewsOneContainerMobile.innerHTML = "";
+  data.trendingNewsOne.forEach((news) => {
+    trendingNewsOneContainerMobile.innerHTML += `
+    <div class="slide me-3">
+        <div class="d-flex">
+          <div>
+            <img src="${news.imageUrl}" alt="Card-image" class="">
+          </div>
+          <div class="ms-4">
+            <h6 class="card-title fw-bold" style="font-size: 14px;">${news.title}</h6>
+            <p class="mb-0 mt-2">${news.date}</p>
           </div>
         </div>
-      `;
-    });
+      </div>
+    `;
+  });
 
   // Update Trending News Two Section
-  const trendingNewsTwoContainer = document.getElementById(
-    "trendingNewsTwoContainer"
-  );
+  const trendingNewsTwoContainer = document.getElementById("trendingNewsTwoContainer");
   trendingNewsTwoContainer.innerHTML = "";
   data.trendingNewsTwo.forEach((news) => {
     trendingNewsTwoContainer.innerHTML += `
@@ -724,35 +735,34 @@ function changeContent(tabName) {
             <img src="${news.imageUrl}" alt="Card-image" class="img-fluid">
           </div>
           <div class="col-8">
-          <h6 class="card-title primary-text-color fw-semibold">${news.title}</h6>
-          <p class="mb-0 mt-3 secondary-text-color">${news.date}</p>
+            <h6 class="card-title primary-text-color fw-semibold">${news.title}</h6>
+            <p class="mb-0 mt-3 secondary-text-color">${news.date}</p>
           </div>
           <hr class="mt-3">
         </div>
     `;
   });
 
-    // Update Trending News Two Section
-    const trendingNewsTwoContainerMobile = document.getElementById(
-      "trendingNewsTwoContainerMobile"
-    );
-    trendingNewsTwoContainerMobile.innerHTML = "";
-    data.trendingNewsTwo.forEach((news) => {
-      trendingNewsTwoContainerMobile.innerHTML += `
-      <div class="slide me-3">
-          <div class="d-flex">
-            <div>
-              <img src="${news.imageUrl}" alt="Card-image" class="">
-            </div>
-            <div class="ms-4">
-              <h6 class="card-title fw-bold" style="font-size: 14px;">${news.title}</h6>
-              <p class="mb-0 mt-2">${news.date}</p>
-            </div>
+  // Update Trending News Two Section for mobile
+  const trendingNewsTwoContainerMobile = document.getElementById("trendingNewsTwoContainerMobile");
+  trendingNewsTwoContainerMobile.innerHTML = "";
+  data.trendingNewsTwo.forEach((news) => {
+    trendingNewsTwoContainerMobile.innerHTML += `
+    <div class="slide me-3">
+        <div class="d-flex">
+          <div>
+            <img src="${news.imageUrl}" alt="Card-image" class="">
+          </div>
+          <div class="ms-4">
+            <h6 class="card-title fw-bold" style="font-size: 14px;">${news.title}</h6>
+            <p class="mb-0 mt-2">${news.date}</p>
           </div>
         </div>
-      `;
-    });
+      </div>
+    `;
+  });
 }
+
 
 // Initialize with Heritage content
 changeContent("Heritage");

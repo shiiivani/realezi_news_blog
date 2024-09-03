@@ -120,12 +120,13 @@
 
                 <!-- Right Side (Scrollable Content) -->
                 <div class="col-lg-6 col-md-12 col-12 rightside">
-                    <div id="newsCards" class="overflow-y-auto overflow-x-hidden custom-scrollbar d-none d-md-block">
+                    <div id="newsCards"
+                        class="overflow-y-auto overflow-x-hidden custom-scrollbar d-none d-lg-block d-md-block">
                         <!-- This section will be hidden on mobile view -->
                     </div>
 
                     <!-- Carousel for mobile view -->
-                    <div id="slider-container" class="slider d-lg-none">
+                    <div id="slider-container" class="slider d-lg-none d-md-none">
                     </div>
                 </div>
             </div>
@@ -145,33 +146,33 @@
                                 onclick="changeCity('Mumbai')">Mumbai</button>
                         </li>
                         <li class="nav-item col-4 col-lg-2 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Delhi-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button" role="tab"
-                                aria-controls="pills-Delhi" aria-selected="false"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color"
+                                id="pills-Delhi-tab" data-bs-toggle="pill" data-bs-target="#pills-Delhi" type="button"
+                                role="tab" aria-controls="pills-Delhi" aria-selected="false"
                                 onclick="changeCity('Delhi')">Delhi</button>
                         </li>
                         <li class="nav-item col-4 col-lg-2 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Baroda-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button" role="tab"
-                                aria-controls="pills-Baroda" aria-selected="false"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color"
+                                id="pills-Baroda-tab" data-bs-toggle="pill" data-bs-target="#pills-Baroda" type="button"
+                                role="tab" aria-controls="pills-Baroda" aria-selected="false"
                                 onclick="changeCity('Baroda')">Baroda</button>
                         </li>
                         <li class="nav-item col-4 col-lg-2 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Pune-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button" role="tab"
-                                aria-controls="pills-Pune" aria-selected="false"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color"
+                                id="pills-Pune-tab" data-bs-toggle="pill" data-bs-target="#pills-Pune" type="button"
+                                role="tab" aria-controls="pills-Pune" aria-selected="false"
                                 onclick="changeCity('Pune')">Pune</button>
                         </li>
                         <li class="nav-item col-4 col-lg-2 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color" id="pills-Chennai-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-Chennai" type="button" role="tab"
-                                aria-controls="pills-Chennai" aria-selected="false"
+                            <button class="nav-link text-dark fs-6 w-100 text-nowrap primary-text-color"
+                                id="pills-Chennai-tab" data-bs-toggle="pill" data-bs-target="#pills-Chennai"
+                                type="button" role="tab" aria-controls="pills-Chennai" aria-selected="false"
                                 onclick="changeCity('Chennai')">Chennai</button>
                         </li>
                         <li class="nav-item col-4 col-lg-2 col-md-2 mb-2 pe-2" role="presentation">
-                            <button class="nav-link text-dark fs-6 text-nowrap primary-text-color" id="pills-Bengaluru-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-Bengaluru" type="button" role="tab"
-                                aria-controls="pills-Bengaluru" aria-selected="false"
+                            <button class="nav-link text-dark fs-6 text-nowrap primary-text-color"
+                                id="pills-Bengaluru-tab" data-bs-toggle="pill" data-bs-target="#pills-Bengaluru"
+                                type="button" role="tab" aria-controls="pills-Bengaluru" aria-selected="false"
                                 onclick="changeCity('Bengaluru')">Bengaluru</button>
                         </li>
                     </ul>
@@ -183,24 +184,26 @@
 
             <div class="row align-items-center">
                 <!-- let side section -->
-                <div class="col-lg-8 col-12 d-none d-lg-block" id="property-cards">
+                <div class="col-lg-8 col-12 d-none d-md-block d-lg-block" id="property-cards">
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-12 col-12">
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" id="card-img-1"
                                     src="./assets/property/mumbai-1.jpg" alt="property-1">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-1">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with Sea
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-1">Villa in
+                                            Mumbai with Sea
                                             View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-1">Very nice property in
+                                        sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...
                                     </p>
@@ -209,7 +212,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -222,17 +226,19 @@
                                 <img class="card-img-top position-relative" id="card-img-2"
                                     src="./assets/property/mumbai-2.jpg" alt="property-2">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-2">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-2">Apartment in Mumbai Suburbs
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-2">
+                                            Apartment in Mumbai Suburbs
                                         </h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text secondary-text-color" id="card-text-2">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-2">Very nice property in
+                                        sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...</p>
                                 </div>
@@ -240,7 +246,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -250,24 +257,28 @@
                     </div>
                 </div>
 
-                <div class="px-3 mt-5 d-lg-none">
+                <div class="px-3 mt-5 d-lg-none d-md-none">
                     <div class="slider">
                         <div class="slide">
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" id="card-mobile-img-1"
                                     src="./assets/property/mumbai-1.jpg" alt="property-1">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-1">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fs-6 fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with
+                                        <h5 class="card-title fs-6 fw-semibold primary-text-color"
+                                            id="card-mobile-title-1">
+                                            Villa in Mumbai with
                                             Sea View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                    <p class="card-text fs-13 secondary-text-color" id="card-mobile-text-1">Very nice
+                                        property
+                                        in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...
                                     </p>
@@ -289,17 +300,21 @@
                                 <img class="card-img-top position-relative" id="card-mobile-img-2"
                                     src="./assets/property/mumbai-1.jpg" alt="property-1">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-1">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fs-6 fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with
+                                        <h5 class="card-title fs-6 fw-semibold primary-text-color"
+                                            id="card-mobile-title-2">
+                                            Villa in Mumbai with
                                             Sea View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                    <p class="card-text fs-13 secondary-text-color" id="card-mobile-text-2">Very nice
+                                        property
+                                        in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...
                                     </p>
@@ -321,9 +336,9 @@
 
                 <!-- Trending section one right side section -->
                 <div class="col-lg-4 col-12 p-3 custom-scrollbar trending-section-right-section">
-                    <div id="trendingNewsOneContainer" class="d-none d-md-block"></div>
+                    <div id="trendingNewsOneContainer" class="d-none d-md-block d-lg-block"></div>
                     <!-- Make sure this container is visible on mobile -->
-                    <div id="trendingNewsOneContainerMobile" class="slider d-lg-none"></div>
+                    <div id="trendingNewsOneContainerMobile" class="slider d-lg-none d-md-none"></div>
                 </div>
             </div>
         </section>
@@ -332,23 +347,25 @@
         <section class="pb-5">
             <div class="row align-items-center">
                 <!-- left side section -->
-                <div class="col-lg-8 col-12 d-none d-lg-block" id="property-cards">
+                <div class="col-lg-8 col-12 d-none d-md-block d-lg-block" id="property-cards">
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-12 col-12">
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" id="card-img-3"
                                     src="./assets/property/mumbai-3.jpg" alt="property-3">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-3">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-3">Luxury Apartment in Mumbai</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-3">Luxury
+                                            Apartment in Mumbai</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text secondary-text-color" id="card-text-3">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-3">Very nice property in
+                                        sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...</p>
                                 </div>
@@ -356,7 +373,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -369,16 +387,18 @@
                                 <img class="card-img-top position-relative" id="card-img-4"
                                     src="./assets/property/mumbai-2.jpg" alt="property-4">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-4">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-4">Apartment in Mumbai Suburbs</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color" id="card-title-4">
+                                            Apartment in Mumbai Suburbs</h5>
                                         <button type="button" class="btn btn-transparent border-0 mt-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text secondary-text-color" id="card-text-4">Very nice property in sec24 Rohini near
+                                    <p class="card-text secondary-text-color" id="card-text-4">Very nice property in
+                                        sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...</p>
                                 </div>
@@ -386,7 +406,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-6 fw-bold primary-text-color">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -396,24 +417,28 @@
                     </div>
                 </div>
 
-                <div class="mt-5 d-lg-none px-3">
+                <div class="mt-5 d-lg-none d-md-none px-3">
                     <div class="slider">
                         <div class="slide">
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" id="card-mobile-img-3"
                                     src="./assets/property/mumbai-1.jpg" alt="property-1">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-1">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fs-6 fw-semibold primary-text-color" id="card-title-1">Villa in Mumbai with
+                                        <h5 class="card-title fs-6 fw-semibold primary-text-color"
+                                            id="card-mobile-title-3">
+                                            Villa in Mumbai with
                                             Sea View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                    <p class="card-text fs-13 secondary-text-color" id="card-mobile-text-3">Very nice
+                                        property
+                                        in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...
                                     </p>
@@ -435,17 +460,21 @@
                                 <img class="card-img-top position-relative" id="card-mobile-img-4"
                                     src="./assets/property/mumbai-1.jpg" alt="property-1">
                                 <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
-                                    id="card-badge-1">Heritage</span>
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title primary-text-color fs-6 fw-semibold" id="card-title-1">Villa in Mumbai with
+                                        <h5 class="card-title primary-text-color fs-6 fw-semibold"
+                                            id="card-mobile-title-4">
+                                            Villa in Mumbai with
                                             Sea View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
                                         </button>
                                     </div>
-                                    <p class="card-text fs-13 secondary-text-color" id="card-text-1">Very nice property in sec24 Rohini near
+                                    <p class="card-text fs-13 secondary-text-color" id="card-mobile-text-4">Very nice
+                                        property
+                                        in sec24 Rohini near
                                         Rithala metro station within 1km and is ISKCON temple 200m. More about this
                                         property...
                                     </p>
@@ -467,9 +496,9 @@
 
                 <!-- Trending section two right side section -->
                 <div class="col-lg-4 col-12 p-3 custom-scrollbar trending-section-right-section">
-                    <div id="trendingNewsTwoContainer" class="d-none d-md-block"></div>
+                    <div id="trendingNewsTwoContainer" class="d-none d-md-block d-lg-block"></div>
                     <!-- Make sure this container is visible on mobile -->
-                    <div id="trendingNewsTwoContainerMobile" class="slider d-lg-none"></div>
+                    <div id="trendingNewsTwoContainerMobile" class="slider d-lg-none d-md-none"></div>
                 </div>
             </div>
         </section>
@@ -484,8 +513,9 @@
                 <!-- Second Column: Text and Input Field -->
                 <div class="col-12 col-md-6">
                     <div class="text-center text-md-start">
-                        <div class="fs-1 text-dark">Unlock property market secrets</div>
-                        <div class="text-dark fs-5">Get insider insights on trends, sustainability, and strategies</div>
+                        <div class="fs-1 primary-text-color fw-bold">Unlock property market secrets</div>
+                        <div class="primary-text-color fs-5">Get insider insights on trends, sustainability, and
+                            strategies</div>
                     </div>
                     <form
                         class="d-md-flex d-block align-items-center justify-content-center justify-content-md-start mt-4">
@@ -506,7 +536,7 @@
         <!-- Featured blog section -->
         <section class="py-5">
             <div class="text-center fs-1 fw-bold mb-5">Featured Blogs</div>
-            <div id="carouselExampleIndicators" class="carousel slide position-relative d-none d-md-block">
+            <div id="carouselExampleIndicators" class="carousel slide position-relative d-none d-lg-block d-md-block">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
@@ -521,7 +551,8 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo.
+                                                    Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
                                                     <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
@@ -543,7 +574,8 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo.
+                                                    Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
                                                     <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
@@ -570,7 +602,8 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo.
+                                                    Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
                                                     <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
@@ -592,7 +625,8 @@
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo.
+                                                    Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
                                                     <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
@@ -617,7 +651,7 @@
             </div>
 
             <!-- Mobile Carousel -->
-            <div id="carouselMobile" class="carousel slide d-block d-md-none">
+            <div id="carouselMobile" class="carousel slide d-block d-md-none d-lg-none">
                 <div class="carousel-inner">
                     <!-- Mobile Carousel Item 1 -->
                     <div class="carousel-item active">
@@ -633,11 +667,12 @@
                                         <!-- Content Column -->
                                         <div class="col-12">
                                             <div class="card-body">
-                                                <h4 class="card-title- fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fs-6 fw-semibold primary-text-color">
+                                                    Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-13 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-13">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -660,11 +695,12 @@
                                         <!-- Content Column -->
                                         <div class="col-12">
                                             <div class="card-body">
-                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fs-6 fw-semibold primary-text-color">
+                                                    Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-13 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-13">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -687,11 +723,12 @@
                                         <!-- Content Column -->
                                         <div class="col-12">
                                             <div class="card-body">
-                                                <h4 class="card-title fw-semibold primary-text-color">Emprendedurismo. Propósito e incertidumbre, dos
+                                                <h4 class="card-title fs-6 fw-semibold primary-text-color">
+                                                    Emprendedurismo. Propósito e incertidumbre, dos
                                                     fuerzas a favor de las organizaciones</h4>
                                                 <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
-                                                    <button class="btn border-0 fw-semibold fs-6">Read More</button>
+                                                    <p class="mb-0 fs-13 secondary-text-color">March 6, 2024</p>
+                                                    <button class="btn border-0 fw-semibold fs-13">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -703,11 +740,11 @@
                 </div>
                 <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; left:-3%;"
                     href="#carouselMobile" role="button" data-bs-slide="prev">
-                    <i class="fa-solid fa-arrow-left text-white fa-2x"></i>
+                    <i class="fa-solid fa-arrow-left text-white fa-lg"></i>
                 </a>
                 <a class="btn rounded-circle position-absolute carousel-button" style="top: 44%; right: -2%;"
                     href="#carouselMobile" role="button" data-bs-slide="next">
-                    <i class="fa-solid fa-arrow-right text-white fa-2x"></i>
+                    <i class="fa-solid fa-arrow-right text-white fa-lg"></i>
                 </a>
             </div>
         </section>
@@ -742,14 +779,15 @@
                 </div>
             </div>
 
-            <div class="d-none d-md-block">
+            <div class="d-none d-md-block d-lg-block">
                 <div class="row mt-5">
                     <!-- Property 5 -->
                     <div class="col-lg-4 col-md-12">
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
                                 alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="currentTabName">Heritage</span>
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -782,7 +820,8 @@
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
                                 alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="currentTabName">Heritage</span>
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -815,7 +854,8 @@
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
                                 alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="currentTabName">Heritage</span>
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -850,7 +890,8 @@
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
                                 alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="currentTabName">Heritage</span>
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -883,7 +924,8 @@
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
                                 alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="currentTabName">Heritage</span>
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -916,7 +958,8 @@
                         <div class="card mb-5">
                             <img class="card-img-top position-relative" src="./assets/property/property-1.jpg"
                                 alt="property-1">
-                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                            <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                id="currentTabName">Heritage</span>
                             <div class="card-body">
                                 <!-- Title and Share Button Row -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -952,11 +995,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View
+                                        </h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -986,11 +1031,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View
+                                        </h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1021,11 +1068,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color">Villa With Panoramic View
+                                        </h5>
                                         <button type="button" class="btn btn-transparent -0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1062,18 +1111,20 @@
                 </div>
             </div>
 
-            <div class="d-lg-none mt-5">
+            <div class="d-lg-none d-md-none mt-5">
                 <div class="slider">
                     <div class="slide">
                         <div class="col-lg-4 col-md-12">
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-3.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic
+                                            View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1089,7 +1140,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-bold">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -1103,11 +1155,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic
+                                            View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1123,7 +1177,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-bold">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -1137,11 +1192,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-4.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic
+                                            View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1157,7 +1214,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color fs-12">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-bold">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -1171,11 +1229,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-5.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic
+                                            View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1191,7 +1251,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-bold">Read
                                                 More</button>
                                         </div>
                                     </div>
@@ -1205,11 +1266,13 @@
                             <div class="card mb-5">
                                 <img class="card-img-top position-relative" src="./assets/property/property-2.jpg"
                                     alt="property-1">
-                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light">Heritage</span>
+                                <span class="badge position-absolute top-0 start-0 px-4 py-2 text-light"
+                                    id="currentTabName">Heritage</span>
                                 <div class="card-body">
                                     <!-- Title and Share Button Row -->
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic View</h5>
+                                        <h5 class="card-title fw-semibold primary-text-color fs-6">Villa With Panoramic
+                                            View</h5>
                                         <button type="button" class="btn btn-transparent border-0 mb-2"
                                             data-bs-toggle="tooltip" data-bs-placement="top" title="Share">
                                             <img src="./assets/icons/share-icon.svg" alt="">
@@ -1225,7 +1288,8 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="mb-0 secondary-text-color fs-13">March 6, 2024</div>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-transparent border-0 fs-13 fw-bold">Read
+                                            <button type="button"
+                                                class="btn btn-transparent border-0 fs-13 fw-bold">Read
                                                 More</button>
                                         </div>
                                     </div>
