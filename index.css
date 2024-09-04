@@ -5,7 +5,7 @@
 body::-webkit-scrollbar {
     display: none;
 }
-  
+
 #checkbox {
     display: none;
 }
@@ -46,6 +46,13 @@ body::-webkit-scrollbar {
 }
 
 /* navbar styles */
+nav {
+    background-color: #111F3C;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
 #checkbox {
     display: none;
 }
@@ -248,6 +255,7 @@ body::-webkit-scrollbar {
 
 .carousel-button {
     background-color: #041A40;
+    border-radius: 50%;
 }
 
 .carousel-button:hover {
@@ -283,20 +291,12 @@ body::-webkit-scrollbar {
 }
 
 /* footer styles */
-footer,
-nav {
+/* footer styles */
+footer {
     background-color: #111F3C;
     color: white;
-}
-
-footer {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-}
-
-nav {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 }
 
 .footer-link:hover {
@@ -385,7 +385,7 @@ nav {
 }
 
 .social-media-btn:hover {
-    width: 100px;
+    width: 110px;
     transition-duration: 0.4s;
     border-radius: 30px;
 }
@@ -418,7 +418,7 @@ nav {
 .appstore-btn {
     background-color: black;
     color: white;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
     height: 60px;
     border-radius: 30px;
     width: 180px;
@@ -428,7 +428,7 @@ nav {
 .playstore-icon,
 .appstore-icon {
     color: white;
-    transition: color 0.3s ease;
+    transition: color 0.8s ease;
 }
 
 .playstore-btn:hover,
@@ -446,6 +446,34 @@ nav {
 .playstore-text,
 .appstore-text {
     font-size: 12px;
+}
+
+
+/* refer button styles */
+.refer-Btn {
+    border: none;
+    padding: 3px 10px 3px 10px;
+    font-size: 16px;
+}
+
+.hiring-Btn {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 30px 6px 6px;
+    border: none;
+    color: #111F3C;
+    font-weight: 300 !important;
+    font-size: 16px;
+    flex-wrap: nowrap;
+    display: flex;
+    position: relative;
+}
+
+#partyPopper {
+    position: absolute;
+    right: -18px;
+    bottom: 5px;
+    width: 70px;
 }
 
 /* Scrollbar Styles */

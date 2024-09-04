@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const riveInstance = new rive.Rive({
+  const partyPopper = new rive.Rive({
     src: "./assets/animation/Party-popper.riv",
-    canvas: document.getElementById("riveCanvas"),
+    canvas: document.getElementById("partyPopper"),
     autoplay: true,
+    stateMachines: "State Machine 1",
     onLoad: () => {
-      riveInstance.resizeDrawingSurfaceToCanvas();
+      partyPopper.resizeDrawingSurfaceToCanvas();
     },
   });
 });
