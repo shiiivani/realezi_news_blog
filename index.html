@@ -15,15 +15,16 @@
 </head>
 
 <body>
-    <!-- navbar section -->
+    <!-- header section -->
     <header class="w-100">
-        <nav class="navbar fixed-top navbar-expand-lg py-3 px-md-5 w-100">
+        <!-- primary navbar section -->
+        <nav class="navbar navbar-expand-lg px-md-5 w-100">
             <div class="container-fluid gap-md-5">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/logo.png" alt="nav-logo" style="height: 37px;">
                 </a>
 
-                <span class="navbar-toggler border-0 bg-transparant" data-bs-toggle="collapse"
+                <span class="navbar-toggler border-0 bg-transparent" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <input id="checkbox" type="checkbox" class="navbar-toggler border-0" data-bs-toggle="collapse"
@@ -50,57 +51,57 @@
                             <a class="header-link text-decoration-none" href="#">Buy or Rent</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-light px-3 mt-lg-0 mt-md-0 mt-4 mb-3 mb-md-0 mb-lg-0"
-                        type="submit">Post
-                        Your
-                        Property</button>
+                    <button class="btn btn-outline-light px-3 mt-lg-0 mt-md-0 mt-4 mb-3 mb-md-0 mb-lg-0" type="submit">
+                        Post Your Property
+                    </button>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <!-- secondary navbar section -->
-    <section class="py-3 rounded-pill secondary-navbar">
-        <div class="container">
-            <ul class="nav nav-tabs border-0 d-flex justify-content-around flex-wrap gap-0" id="myTab" role="tablist">
-                <li class="nav-item border-0" role="presentation">
-                    <button class="nav-link active text-nowrap custom-navlink px-1 border-0" id="Heritage-tab"
-                        data-bs-toggle="tab" data-bs-target="#Heritage" type="button" role="tab"
-                        aria-controls="Heritage" aria-selected="true" onclick="changeContent('Heritage')">
-                        <span class="px-md-3 px-0">Heritage</span>
-                    </button>
-                </li>
-                <li class="nav-item border-0" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Technology-tab"
-                        data-bs-toggle="tab" data-bs-target="#Technology" type="button" role="tab"
-                        aria-controls="Technology" aria-selected="false" onclick="changeContent('Technology')">
-                        <span class="px-md-3 px-0">Technology</span>
-                    </button>
-                </li>
-                <li class="nav-item border-0" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Architecture-tab"
-                        data-bs-toggle="tab" data-bs-target="#Architecture" type="button" role="tab"
-                        aria-controls="Architecture" aria-selected="false" onclick="changeContent('Architecture')">
-                        <span class="px-md-3 px-0">Architecture</span>
-                    </button>
-                </li>
-                <li class="nav-item border-0" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Real-Estate-tab"
-                        data-bs-toggle="tab" data-bs-target="#Real-Estate" type="button" role="tab"
-                        aria-controls="Real-Estate" aria-selected="false" onclick="changeContent('Real-Estate')">
-                        <span class="px-md-3 px-0">Real-Estate</span>
-                    </button>
-                </li>
-                <li class="nav-item border-0" role="presentation">
-                    <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Business-tab"
-                        data-bs-toggle="tab" data-bs-target="#Business" type="button" role="tab"
-                        aria-controls="Business" aria-selected="false" onclick="changeContent('Business')">
-                        <span class="px-md-3 px-0">Business</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <!-- secondary navbar section -->
+        <section class="py-3 rounded-pill secondary-navbar">
+            <div class="container">
+                <ul class="nav nav-tabs border-0 d-flex justify-content-around flex-wrap gap-0" id="myTab"
+                    role="tablist">
+                    <li class="nav-item border-0" role="presentation">
+                        <button class="nav-link active text-nowrap custom-navlink px-1 border-0" id="Heritage-tab"
+                            data-bs-toggle="tab" data-bs-target="#Heritage" type="button" role="tab"
+                            aria-controls="Heritage" aria-selected="true" onclick="changeContent('Heritage')">
+                            <span class="px-md-3 px-0">Heritage</span>
+                        </button>
+                    </li>
+                    <li class="nav-item border-0" role="presentation">
+                        <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Technology-tab"
+                            data-bs-toggle="tab" data-bs-target="#Technology" type="button" role="tab"
+                            aria-controls="Technology" aria-selected="false" onclick="changeContent('Technology')">
+                            <span class="px-md-3 px-0">Technology</span>
+                        </button>
+                    </li>
+                    <li class="nav-item border-0" role="presentation">
+                        <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Architecture-tab"
+                            data-bs-toggle="tab" data-bs-target="#Architecture" type="button" role="tab"
+                            aria-controls="Architecture" aria-selected="false" onclick="changeContent('Architecture')">
+                            <span class="px-md-3 px-0">Architecture</span>
+                        </button>
+                    </li>
+                    <li class="nav-item border-0" role="presentation">
+                        <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Real-Estate-tab"
+                            data-bs-toggle="tab" data-bs-target="#Real-Estate" type="button" role="tab"
+                            aria-controls="Real-Estate" aria-selected="false" onclick="changeContent('Real-Estate')">
+                            <span class="px-md-3 px-0">Real-Estate</span>
+                        </button>
+                    </li>
+                    <li class="nav-item border-0" role="presentation">
+                        <button class="nav-link text-nowrap custom-navlink px-1 border-0" id="Business-tab"
+                            data-bs-toggle="tab" data-bs-target="#Business" type="button" role="tab"
+                            aria-controls="Business" aria-selected="false" onclick="changeContent('Business')">
+                            <span class="px-md-3 px-0">Business</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
 
     <main class="container bg-white">
         <!-- hero section -->
@@ -549,16 +550,16 @@
                                         <!-- Image Column -->
                                         <div class="col-md-4">
                                             <img src="./assets/property/property-7.png" alt="Card-image"
-                                                class="h-100 w-100">
+                                                class="h-100 w-100" style="overflow: hidden;">
                                         </div>
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title primary-text-color">Emprendedurismo.
+                                                <div class="card-title primary-text-color fs-5">Emprendedurismo.
                                                     Propósito e incertidumbre, dos
-                                                    fuerzas a favor de las organizaciones</h4>
-                                                <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    fuerzas a favor de las organizaciones</div>
+                                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                                    <p class="mb-0 fs-6 secondary-text-color">March 6, 2024</p>
                                                     <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
@@ -572,16 +573,16 @@
                                         <!-- Image Column -->
                                         <div class="col-md-4">
                                             <img src="./assets/property/property-7.png" alt="Card-image"
-                                                class="h-100 w-100">
+                                                class="h-100 w-100" style="overflow: hidden;">
                                         </div>
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title primary-text-color">Emprendedurismo.
+                                                <div class="card-title primary-text-color fs-5">Emprendedurismo.
                                                     Propósito e incertidumbre, dos
-                                                    fuerzas a favor de las organizaciones</h4>
-                                                <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    fuerzas a favor de las organizaciones</div>
+                                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                                    <p class="mb-0 fs-6 secondary-text-color">March 6, 2024</p>
                                                     <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
@@ -600,16 +601,16 @@
                                         <!-- Image Column -->
                                         <div class="col-md-4">
                                             <img src="./assets/property/property-7.png" alt="Card-image"
-                                                class="h-100 w-100">
+                                                class="h-100 w-100" style="overflow: hidden;">
                                         </div>
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title primary-text-color">Emprendedurismo.
+                                                <div class="card-title primary-text-color fs-5">Emprendedurismo.
                                                     Propósito e incertidumbre, dos
-                                                    fuerzas a favor de las organizaciones</h4>
-                                                <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    fuerzas a favor de las organizaciones</div>
+                                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                                    <p class="mb-0 fs-6 secondary-text-color">March 6, 2024</p>
                                                     <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>
@@ -623,16 +624,16 @@
                                         <!-- Image Column -->
                                         <div class="col-md-4">
                                             <img src="./assets/property/property-7.png" alt="Card-image"
-                                                class="h-100 w-100">
+                                                class="h-100 w-100" style="overflow: hidden;">
                                         </div>
                                         <!-- Content Column -->
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h4 class="card-title primary-text-color">Emprendedurismo.
+                                                <div class="card-title primary-text-color fs-5">Emprendedurismo.
                                                     Propósito e incertidumbre, dos
-                                                    fuerzas a favor de las organizaciones</h4>
-                                                <div class="d-flex justify-content-between align-items-center mt-5">
-                                                    <p class="mb-0 fs-5 secondary-text-color">March 6, 2024</p>
+                                                    fuerzas a favor de las organizaciones</div>
+                                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                                    <p class="mb-0 fs-6 secondary-text-color">March 6, 2024</p>
                                                     <button class="btn border-0 fw-semibold fs-6">Read More</button>
                                                 </div>
                                             </div>

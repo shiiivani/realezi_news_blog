@@ -53,6 +53,11 @@ nav {
     border-bottom-right-radius: 30px;
 }
 
+.navbar {
+    padding: 13px 10px 13px 10px;
+}
+
+
 #checkbox {
     display: none;
 }
