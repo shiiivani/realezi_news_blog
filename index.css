@@ -595,3 +595,100 @@ footer {
         margin: 0;
     }
 }
+
+/* Share Container */
+.share-container {
+    position: relative;
+}
+
+
+.share-container::before {
+    content: "Share this property";
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background-color: #00000090;
+    color: #fff;
+    z-index: 100;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.arrow-pair {
+    position: relative;
+}
+
+.arrow-pair::before {
+    content: "Save this property";
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background-color: #00000090;
+    color: #fff;
+    z-index: 100;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.share-container:hover::before,
+.arrow-pair:hover::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.property-overview-container .share-container:before {
+    left: 0px;
+}
+
+.share-container ul {
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 5;
+    width: max-content;
+    padding-left: 0;
+    top: 40px;
+    left: -35px;
+    box-shadow: 0px 0px 20px 2px #00000025;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.share-container ul.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.share-container ul li p:hover {
+    color: #EC7100;
+    cursor: pointer;
+}
+
+.share-container ul li p {
+    margin: 0;
+    margin-left: 12px;
+    color: #616161;
+}
+
+.share-container ul li:first-child {
+    color: #434343;
+    background-color: #f7f9ff;
+}
+
+.share-container ul li {
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+}

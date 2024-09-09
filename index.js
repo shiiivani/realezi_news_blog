@@ -10,6 +10,49 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  let activeShareContainer = null; // Track the currently active share container
+
+  const shareContainers = document.querySelectorAll(".share-container");
+
+  // Function to close all open dropdowns
+  function closeAllShareContainers() {
+    shareContainers.forEach((share) => {
+      const list = share.querySelector("ul");
+      if (list.classList.contains("active")) {
+        list.classList.remove("active");
+      }
+    });
+    activeShareContainer = null; // Reset the active container
+  }
+
+  // Add click event for each share button
+  shareContainers.forEach((share) => {
+    const list = share.querySelector("ul");
+    share.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent click from propagating to document
+
+      // Close any previously opened share container
+      if (activeShareContainer && activeShareContainer !== list) {
+        closeAllShareContainers();
+      }
+
+      // Toggle the current share container
+      list.classList.toggle("active");
+
+      // Update the currently active share container
+      activeShareContainer = list.classList.contains("active") ? list : null;
+    });
+  });
+
+  // Close share containers when clicking outside
+  document.addEventListener("click", function () {
+    if (activeShareContainer) {
+      closeAllShareContainers();
+    }
+  });
+});
+
 document
   .querySelector(".toggle-collapse")
   .addEventListener("click", function () {
