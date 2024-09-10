@@ -533,6 +533,10 @@ footer {
     .trending-section-right-section {
         height: 4100%;
     }
+
+    .share-container ul li p, .share-family-text {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 767px) {
