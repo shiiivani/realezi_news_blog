@@ -17,7 +17,9 @@ subscribeForm.addEventListener("submit", function (event) {
 // Get references to the form and video sections
 const mobileSubscribeForm = document.getElementById("mobileSubscribeForm");
 const mobileVideoSection = document.getElementById("mobile-video-section");
-const mobileSecondVideoSection = document.getElementById("mobile-second-video-section");
+const mobileSecondVideoSection = document.getElementById(
+  "mobile-second-video-section"
+);
 
 // Handle form submission
 mobileSubscribeForm.addEventListener("submit", function (event) {

@@ -1,16 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const partyPopper = new rive.Rive({
-    src: "./assets/animation/Party-popper.riv",
-    canvas: document.getElementById("partyPopper"),
-    autoplay: true,
-    stateMachines: "State Machine 1",
-    onLoad: () => {
-      partyPopper.resizeDrawingSurfaceToCanvas();
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   let activeShareContainer = null; // Track the currently active share container
 
   const shareContainers = document.querySelectorAll(".share-container");
@@ -422,13 +410,15 @@ const contentData = {
       "Explore cutting-edge designs.  Sustainable architecture for the future.  Innovative spaces that inspire.",
     newsItems: [
       {
-        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
       },
       {
-        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
@@ -505,13 +495,15 @@ const contentData = {
       "Understand the real estate market.  Trends that are shaping property investments.  Expert advice for buyers and sellers.",
     newsItems: [
       {
-        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
       },
       {
-        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
@@ -589,13 +581,15 @@ const contentData = {
       "Adapt and thrive in today's business landscape.  Innovative strategies for growth.  Insights from industry leaders.",
     newsItems: [
       {
-        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
       },
       {
-        title: "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
+        title:
+          "Emprendedurismo. Propósito e incertidumbre, dos fuerzas a favor de las organizaciones",
         description:
           "Descubre cómo el propósito y la incertidumbre pueden ser dos fuerzas poderosas a favor de las organizaciones. comparte sus reflexiones sobre cómo las empresas pueden aportar valor en lugar de simplemente vender para sobrevivir",
         image: "/assets/property/property-7.png",
@@ -667,7 +661,7 @@ const contentData = {
   },
 };
 
-var currentTabName = '';
+var currentTabName = "";
 
 function changeContent(tabName) {
   currentTabName = tabName;
@@ -710,10 +704,10 @@ function changeContent(tabName) {
       const words = text.split(" ");
       return words.length > 5 ? words.slice(0, 5).join(" ") + "..." : text;
     };
-    
+
     const truncatedTitle = truncateText(news.title);
     const truncatedDescription = truncateText(news.description);
-    
+
     sliderContainer.innerHTML += `
     <div class="slide me-3">
       <div class="card border-0 shadow p-1">
@@ -730,10 +724,12 @@ function changeContent(tabName) {
       </div>
     </div>  
     `;
-  });  
+  });
 
   // Update Trending News One Section
-  const trendingNewsOneContainer = document.getElementById("trendingNewsOneContainer");
+  const trendingNewsOneContainer = document.getElementById(
+    "trendingNewsOneContainer"
+  );
   trendingNewsOneContainer.innerHTML = "";
   data.trendingNewsOne.forEach((news) => {
     trendingNewsOneContainer.innerHTML += `
@@ -751,7 +747,9 @@ function changeContent(tabName) {
   });
 
   // Update Trending News One Section for mobile
-  const trendingNewsOneContainerMobile = document.getElementById("trendingNewsOneContainerMobile");
+  const trendingNewsOneContainerMobile = document.getElementById(
+    "trendingNewsOneContainerMobile"
+  );
   trendingNewsOneContainerMobile.innerHTML = "";
   data.trendingNewsOne.forEach((news) => {
     trendingNewsOneContainerMobile.innerHTML += `
@@ -770,7 +768,9 @@ function changeContent(tabName) {
   });
 
   // Update Trending News Two Section
-  const trendingNewsTwoContainer = document.getElementById("trendingNewsTwoContainer");
+  const trendingNewsTwoContainer = document.getElementById(
+    "trendingNewsTwoContainer"
+  );
   trendingNewsTwoContainer.innerHTML = "";
   data.trendingNewsTwo.forEach((news) => {
     trendingNewsTwoContainer.innerHTML += `
@@ -788,7 +788,9 @@ function changeContent(tabName) {
   });
 
   // Update Trending News Two Section for mobile
-  const trendingNewsTwoContainerMobile = document.getElementById("trendingNewsTwoContainerMobile");
+  const trendingNewsTwoContainerMobile = document.getElementById(
+    "trendingNewsTwoContainerMobile"
+  );
   trendingNewsTwoContainerMobile.innerHTML = "";
   data.trendingNewsTwo.forEach((news) => {
     trendingNewsTwoContainerMobile.innerHTML += `
@@ -807,6 +809,31 @@ function changeContent(tabName) {
   });
 }
 
-
 // Initialize with Heritage content
 changeContent("Heritage");
+
+function shareToFacebook() {
+  const url = encodeURIComponent(window.location.href);
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, "_blank");
+}
+
+function shareToWhatsApp() {
+  const url = encodeURIComponent(window.location.href);
+  window.open(`https://wa.me/?text=${url}`, "_blank");
+}
+
+function shareToEmail() {
+  const subject = encodeURIComponent("Check out this article!");
+  const body = encodeURIComponent(
+    `I found this article interesting: ${window.location.href}`
+  );
+  window.location.href = `mailto:?subject=${subject}&body=${body}`;
+}
+
+function copyLink() {
+  const url = window.location.href;
+  navigator.clipboard
+    .writeText(url)
+    .then(() => alert("Link copied to clipboard!"))
+    .catch((err) => console.error("Failed to copy text: ", err));
+}
